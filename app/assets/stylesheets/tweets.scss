@@ -25,6 +25,7 @@ $cSubTitle: #535353;
         right: 800px;
         font-size: 20px;
         text-align: center;
+        letter-spacing: 2px;
 
         & .word {
             margin: 18px 0 0 0;
@@ -157,6 +158,8 @@ body {
 .main-title {
     font-weight: 600;
     font-size: 25px;
+    text-decoration: none;
+    color: $cBlack;
 }
 .sub-title {
     display: block;
