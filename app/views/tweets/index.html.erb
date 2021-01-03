@@ -20,33 +20,39 @@
     </div>
     <nav class="mobile-menu">
         <ul class="mobile-menu__main">
-            <%# <% if user_signed_in? %> %>
+            <% if user_signed_in? %>
             <li class="mobile-menu__item">
                 <a class="mobile-menu__link">
-                    <span><%= link_to "名前", "#", class: "main-title" %></span>
+                    <span><%= link_to "Name", "#", class: "main-title" %></span>
                     <span class="sub-title">名前</span>
                 </a>
             </li>
             <li class="mobile-menu__item">
                 <a class="mobile-menu__link">
-                    <span><%= link_to "ログアウト", "#", class: "main-title" %></span>
-                    <span class="sub-title">新規登録</span>
+                    <span><%= link_to "New Post", "#", class: "main-title" %></span>
+                    <span class="sub-title">新規投稿</span>
                 </a>
             </li>
-            <%# <% else %> %>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link">
+                    <span><%= link_to "Logout", destroy_user_session_path, method: :delete, class: "main-title" %></span>
+                    <span class="sub-title">ログアウト</span>
+                </a>
+            </li>
+            <% else %>
             <li class="mobile-menu__item">
                 <a class="mobile-menu__link" href="#">
-                    <span class="main-title">Login</span>
+                    <span><%= link_to "Login", new_user_session_path, class: "main-title" %></span>
                     <span class="sub-title">ログイン</span>
                 </a>
             </li>
             <li class="mobile-menu__item">
                 <a class="mobile-menu__link" href="#">
-                    <span class="main-title">Sign Up</span>
+                    <span><%= link_to "Sign Up", new_user_registration_path, class: "main-title" %></span>
                     <span class="sub-title">新規登録</span>
                 </a>
             </li>
-            <%# <% end %> %>
+            <% end %>
         </ul>
     </nav>
 </div> 
