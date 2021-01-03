@@ -1,0 +1,52 @@
+<div id="global-container">
+    <div id="container">
+        <div class="mobile-menu__cover"></div>
+        <header class="header">
+            <p class="title">規格外の果物やさん</p>
+            <button class="mobile-menu__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+        <div class="explanation">
+            <p class="word">味は変わらず美味しいのに、</p><br>
+            <p class="word">キズや形が悪くて出荷できない果物。</p><br>
+            <p class="word">それでも誰かに届けたい農家さんと</p><br>
+            <p class="word">それでも食べてみたいと思う人と人とを</p><br>
+            <p class="word">つなぐマッチングサービスです。</p>
+        </div>
+        <%= image_tag "IMG_6018-1.JPG", alt: "top icon", id: "assets" %>
+    </div>
+    <nav class="mobile-menu">
+        <ul class="mobile-menu__main">
+            <%# <% if user_signed_in? %> %>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link">
+                    <span><%= link_to "名前", "#", class: "main-title" %></span>
+                    <span class="sub-title">名前</span>
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link">
+                    <span><%= link_to "ログアウト", "#", class: "main-title" %></span>
+                    <span class="sub-title">新規登録</span>
+                </a>
+            </li>
+            <%# <% else %> %>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">
+                    <span class="main-title">Login</span>
+                    <span class="sub-title">ログイン</span>
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">
+                    <span class="main-title">Sign Up</span>
+                    <span class="sub-title">新規登録</span>
+                </a>
+            </li>
+            <%# <% end %> %>
+        </ul>
+    </nav>
+</div> 
