@@ -23,13 +23,13 @@
             <% if user_signed_in? %>
             <li class="mobile-menu__item">
                 <a class="mobile-menu__link">
-                    <span><%= link_to "Name", "#", class: "main-title" %></span>
+                    <span><%= link_to current_user.nickname, "#", class: "main-title" %></span>
                     <span class="sub-title">名前</span>
                 </a>
             </li>
             <li class="mobile-menu__item">
                 <a class="mobile-menu__link">
-                    <span><%= link_to "New Post", "#", class: "main-title" %></span>
+                    <span><%= link_to "New Post", new_tweet_path, class: "main-title" %></span>
                     <span class="sub-title">新規投稿</span>
                 </a>
             </li>
@@ -41,13 +41,13 @@
             </li>
             <% else %>
             <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="#">
+                <a class="mobile-menu__link">
                     <span><%= link_to "Login", new_user_session_path, class: "main-title" %></span>
                     <span class="sub-title">ログイン</span>
                 </a>
             </li>
             <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="#">
+                <a class="mobile-menu__link">
                     <span><%= link_to "Sign Up", new_user_registration_path, class: "main-title" %></span>
                     <span class="sub-title">新規登録</span>
                 </a>
