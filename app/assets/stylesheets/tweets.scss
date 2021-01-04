@@ -6,7 +6,6 @@ $cSubTitle: #535353;
 
 #container {
     position: relative;
-    // background-color: teal;
     height: 100vh;
     z-index: 2;
     transition: all 0.5s;
@@ -26,6 +25,7 @@ $cSubTitle: #535353;
         font-size: 20px;
         text-align: center;
         letter-spacing: 2px;
+        opacity: 0.7;
 
         & .word {
             margin: 18px 0 0 0;
@@ -53,6 +53,7 @@ $cSubTitle: #535353;
 
 body {
     margin: 0;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
 
 .mobile-menu {

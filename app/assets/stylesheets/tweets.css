@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #container {
   position: relative;
   height: 100vh;
@@ -21,6 +22,7 @@
   font-size: 20px;
   text-align: center;
   letter-spacing: 2px;
+  opacity: 0.7;
 }
 
 #container .explanation .word {
@@ -52,6 +54,7 @@
 
 body {
   margin: 0;
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
 
 .mobile-menu {

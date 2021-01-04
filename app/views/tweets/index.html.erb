@@ -16,7 +16,11 @@
             <p class="word">それでも食べてみたいと思う人と人とを</p><br>
             <p class="word">つなぐマッチングサービスです。</p>
         </div>
-        <%= image_tag "IMG_6018-1.JPG", alt: "top icon", id: "assets" %>
+        <% if user_signed_in? %>
+            <%= image_tag "AdobeStock_285734617.jpeg", alt: "top icon", id: "assets" %>
+        <% else %>
+            <%= image_tag "AdobeStock_251835289.jpeg", alt: "top icon", id: "assets" %>
+        <% end %>
     </div>
     <nav class="mobile-menu">
         <ul class="mobile-menu__main">
