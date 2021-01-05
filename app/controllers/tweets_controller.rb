@@ -1,4 +1,5 @@
 class TweetsController < ApplicationController
+    before_action :set_find, except: [:index, :new, :create]
     def index
         @tweets = Tweet.all
     end
@@ -18,7 +19,17 @@ class TweetsController < ApplicationController
     end
 
     def show
-        @tweet = Tweet.find(params[:id])
+    end
+
+    def edit
+    end
+
+    def update
+        if @tweet.update(tweet_params)
+            redirect_to tweet_path
+        else
+            render :edit
+        end
     end
 
     private
@@ -26,5 +37,9 @@ class TweetsController < ApplicationController
     def tweet_params
         params.require(:tweet).permit(:name, :price, :text, :shipping_cost_id,
                                       :shipping_day_id, :prefecture_id, :image).merge(user_id: current_user.id)
+    end
+
+    def set_find
+        @tweet = Tweet.find(params[:id])
     end
 end
