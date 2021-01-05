@@ -1,3 +1,11 @@
+<header class="header">
+  <p class="title">規格外の果物やさん</p>
+  <div class="nav-menu">
+    <%= link_to "新規登録", new_user_registration_path, class: "main-signup" %>
+    <%= link_to "トップページ", root_path, class: "main-top" %>
+  </div>
+</header>
+<%= image_tag "AdobeStock_21765838.jpeg", alt: "top icon", id: "login-image" %>
 <h2>Log in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
