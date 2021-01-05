@@ -33,7 +33,7 @@
                                     <%= link_to "#{tweet.user.nickname} さん", "#" %>
                                 </div>
                                 <div class="item-img-content">
-                                    <%= image_tag tweet.image.variant(resize: '400x400'), class: "item-img" %>
+                                    <%= link_to image_tag(tweet.image.variant(resize: '400x400'), class: "item-img"), tweet_path(tweet) %>
                                 </div>
                                 <h3 class="item-name">
                                     <%= tweet.name %>
