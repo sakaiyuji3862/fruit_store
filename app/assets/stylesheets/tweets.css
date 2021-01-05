@@ -37,6 +37,20 @@
   left: 30px;
 }
 
+#container .item-contents {
+  text-align: center;
+  margin: 100px 0 10px;
+}
+
+#container .item-lists {
+  width: 800px;
+  margin: 0 auto;
+}
+
+#container .item-lists .item-info {
+  margin: 50px 0 70px;
+}
+
 .header {
   background-color: white;
   height: 100px;

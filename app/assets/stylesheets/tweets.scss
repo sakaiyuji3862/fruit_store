@@ -38,6 +38,20 @@ $cSubTitle: #535353;
         bottom: 5px;
         left: 30px;
     }
+
+    & .item-contents {
+        text-align: center;
+        margin: 100px 0 10px;
+    }
+
+    & .item-lists {
+        width: 800px;
+        margin: 0 auto;
+
+        & .item-info {
+            margin: 50px 0 70px;
+        }
+    }
 }
 
 .header {

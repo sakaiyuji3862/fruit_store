@@ -17,7 +17,39 @@
             <p class="word">つなぐマッチングサービスです。</p>
         </div>
         <% if user_signed_in? %>
+            <%# 投稿商品一覧 %>
             <%= image_tag "AdobeStock_285734617.jpeg", alt: "top icon", id: "assets" %>
+            <div class="item-contents">
+                <h2 class="new-post">投稿一覧</h2>
+                <div class="new-post">
+                    <span><%= link_to "New Post", new_tweet_path %></span>
+                    <span class="sub-title">新規投稿</span>
+                </div>
+                <div class="item-lists">
+                    <% if @tweets.length != 0 %>
+                        <% @tweets.each do |tweet|%>
+                            <div class="item-info">
+                                <div class="user_nickname">
+                                    <%= link_to "#{tweet.user.nickname} さん", "#" %>
+                                </div>
+                                <div class="item-img-content">
+                                    <%= image_tag tweet.image.variant(resize: '400x400'), class: "item-img" %>
+                                </div>
+                                <h3 class="item-name">
+                                    <%= tweet.name %>
+                                </h3>
+                                <div class="item-price">  
+                                    <span><%= tweet.price %>円</span>
+                                </div>
+                                <div class="item-text">
+                                    <%= tweet.text %>
+                                </div>
+                            </div>
+                        <% end %>
+                    <% end %>
+                </div>
+            </div>
+            <%# /投稿商品一覧 %>
         <% else %>
             <%= image_tag "AdobeStock_251835289.jpeg", alt: "top icon", id: "assets" %>
             <p class="copy-right">&copy; 2021 Fruit_store</p>
