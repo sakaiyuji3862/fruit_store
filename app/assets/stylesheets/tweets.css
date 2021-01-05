@@ -31,6 +31,12 @@
   font-weight: bold;
 }
 
+#container .copy-right {
+  position: absolute;
+  bottom: 5px;
+  left: 30px;
+}
+
 .header {
   background-color: white;
   height: 100px;
