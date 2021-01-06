@@ -1,0 +1,74 @@
+$cWhite: white;
+
+.sub-header {
+    position: fixed;
+    top: 0px;
+    background-color: $cWhite;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+
+    & .sub-title {
+        font-size: 25px;
+        padding: 35px;
+        font-weight: normal;
+        letter-spacing: 3px;
+    }
+}
+
+#login-image {
+    width: 90%;
+    height: 90%;
+    position: relative;
+}
+
+.login-menu {
+    text-align: center;
+    width: 400px;
+    height: 450px;
+    position: absolute;
+    top: 400px;
+    right: 780px;
+    background-color: $cWhite;
+    opacity: 0.7;
+
+    & .login {
+        font-size: 40px;
+    }
+
+    & .field {
+        font-size: 30px;
+
+        & .input-default {
+            font-size: 30px;
+        }
+        
+    }
+}
+
+.sign-menu {
+    text-align: center;
+    width: 400px;
+    height: 650px;
+    position: absolute;
+    top: 400px;
+    right: 780px;
+    background-color:$cWhite;
+    opacity: 0.7;
+
+    & .login {
+        font-size: 40px;
+    }
+
+    & .field {
+        font-size: 30px;
+
+        & .input-default {
+            font-size: 30px;
+        }
+        
+    }
+}
