@@ -1,3 +1,11 @@
+<header class="sub-header">
+  <p class="sub-title">規格外の果物やさん</p>
+  <div class="nav-menu">
+    <%= link_to "トップページ", root_path, class: "main-header" %>
+    <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "main-header" %>
+  </div>
+</header>
+<%= image_tag "AdobeStock_1816103.jpeg", alt: "top icon", id: "login-image" %>
 <div class="item-show">
     <div class="item-box">
         <h2 class="name">
