@@ -32,7 +32,7 @@
         <table class="detail-table">
             <tbody>
                 <tr>
-                    <th class="detail-item">出品者</th>
+                    <th class="detail-item">品物</th>
                     <td class="detail-value"><%= @tweet.name %></td>
                 </tr>
                 <tr>
@@ -49,6 +49,26 @@
                 </tr>
             </tbody>
         </table>
-
+    </div>
+    <div calss="container">
+        <% if user_signed_in? %>
+            <%= form_with(model: [@tweet,@comment], local:true)do |form| %>
+                <%= form.text_area :text, placeholder: "コメントする", rows: "2" %>
+                <%= form.submit "SEND" %>
+            <% end %>
+        <% else %>
+            <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</strong>
+        <% end %>
+        <div class="comments">
+            <h4>＜コメント一覧＞</h4>
+            <% if @comments.length != 0 %>
+                <% @comments.each do |comment| %>
+                    <p>
+                        <strong><%= link_to comment.user.nickname, "#" %>：</strong>
+                        <%= comment.text %>
+                    </p>
+                <% end %>
+            <% end %>
+        </div>
     </div>
 </div>
