@@ -1,0 +1,22 @@
+$cBlack: black;
+$cWhite: white;
+
+.sub-btn {
+    background-color: $cWhite;
+    color: $cBlack;
+    text-decoration: none;
+    padding: 10px 40px;
+    margin: 50px 10px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: $cBlack;
+        color: $cWhite;
+        box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+    }
+}
+
