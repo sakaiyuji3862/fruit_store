@@ -1,101 +1,97 @@
 <header class="sub-header">
   <p class="sub-title">規格外の果物やさん</p>
   <div class="nav-menu">
-    <%= link_to "トップページ", root_path, class: "main-header" %>
-    <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "main-header" %>
+    <%= link_to "トップページ", root_path, class: "sub-btn" %>
+    <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "sub-btn" %>
   </div>
 </header>
-<%= image_tag "AdobeStock_186055723.jpeg", alt: "top icon", id: "login-image" %>
-<h1 class="new-field">編集</h1>
-<h2 class="items-sell-title">商品情報を編集</h2>
-<%= form_with model: @tweet, local: true do |f| %>
-    <%# 出品画像 %>
-    <div class="img-upload">
-        <div class="weight-bold-text">
-            出品画像
-            <span class="indispensable">必須</span>
-        </div>
-        <div class="click-upload">
-            <p>クリックしてファイルをアップロード</p>
-            <%= f.file_field :image, id:"item-image" %>
-        </div>
-    </div>
-    <%# /出品画像 %>
+<%= image_tag "AdobeStock_186055723.jpeg", alt: "top icon", id: "new-image" %>
+<div class="items-sell-main">
+  <div class="items-header">
+    <h1 class="new-field">出品</h1>
+    <h2 class="items-sell-title">商品情報を入力</h2>
+  </div>
 
-    <%# 商品名と商品説明 %>
-    <div class="new-items">
-        <div class="weight-bold-text">
-        商品名
-        <span class="indispensable">必須</span>
-        </div>
-        <%= f.text_area :name, class: "items_text", id: "item-name", placeholder: "商品名(必須４０文字まで)", maxlenght:"40" %>
-        <div class="items-explain">
-            <div class="weight-bold-text">
-                商品説明
-                <span class="indispensable">必須</span>
-            </div>
-            <%= f.text_area :text, class: "items-text", id: "item-info", placeholder: "商品の説明(必須2００文字まで)", rows:"4", maxlenght:"200" %>
-        </div>
-    </div>
-    <%# /商品名と商品説明 %>
+  <%= form_with model: @tweet, local: true do |f| %>
+  <%= render 'shared/error_messages', model: f.object %>
+      <%# 出品画像 %>
+      <div class="img-upload">
+          <div class="weight-bold-text">
+              出品画像
+          </div>
+          <div class="click-upload">
+              <p>クリックしてファイルをアップロード</p>
+              <%= f.file_field :image, id:"item-image" %>
+          </div>
+      </div>
+      <%# /出品画像 %>
 
-    <%# 配送について %>
-    <div class="items-detail">
-      <div class="weight-bold-text question-text">
+      <%# 商品名と商品説明 %>
+      <div class="new-items">
+          <div class="weight-bold-text">
+          商品名
+          </div>
+          <%= f.text_area :name, class: "items_text", id: "item-name", placeholder: "商品名(必須４０文字まで)", maxlenght:"40" %>
+          <div class="items-explain">
+              <div class="weight-bold-text">
+                  商品説明
+              </div>
+              <%= f.text_area :text, class: "items-text", id: "item-info", placeholder: "商品の説明(必須2００文字まで)", rows:"4", maxlenght:"200" %>
+          </div>
+      </div>
+      <%# /商品名と商品説明 %>
+
+      <%# 配送について %>
+      <div class="items-detail">
         <span>配送について</span>
+        <div class="form">
+          <div class="weight-bold-text">
+            配送料の負担
+          </div>
+          <%= f.collection_select(:shipping_cost_id, ShippingCost.all, :id, :name, {}, {class:"select-box", id:"item-shipping-fee-status"}) %>
+          <div class="weight-bold-text">
+            発送元の地域
+          </div>
+          <%= f.collection_select(:prefecture_id, Prefecture.all, :id, :name, {}, {class:"select-box", id:"item-prefecture"}) %>
+          <div class="weight-bold-text">
+            発送までの日数
+          </div>
+          <%= f.collection_select(:shipping_day_id, ShippingDay.all, :id, :name, {}, {class:"select-box", id:"item-scheduled-delivery"}) %>
+        </div>
       </div>
-      <div class="form">
-        <div class="weight-bold-text">
-          配送料の負担
-          <span class="indispensable">必須</span>
-        </div>
-        <%= f.collection_select(:shipping_cost_id, ShippingCost.all, :id, :name, {}, {class:"select-box", id:"item-shipping-fee-status"}) %>
-        <div class="weight-bold-text">
-          発送元の地域
-          <span class="indispensable">必須</span>
-        </div>
-        <%= f.collection_select(:prefecture_id, Prefecture.all, :id, :name, {}, {class:"select-box", id:"item-prefecture"}) %>
-        <div class="weight-bold-text">
-          発送までの日数
-          <span class="indispensable">必須</span>
-        </div>
-        <%= f.collection_select(:shipping_day_id, ShippingDay.all, :id, :name, {}, {class:"select-box", id:"item-scheduled-delivery"}) %>
-      </div>
-    </div>
-    <%# /配送について %>
+      <%# /配送について %>
 
-    <%# 販売価格 %>
-    <div class="sell-price">
-        <div class="weight-bold-text question-text">
+      <%# 販売価格 %>
+      <div class="sell-price">
         <span>販売価格<br>(¥300~9,999,999)</span>
-    </div>
-    <div>
-        <div class="price-content">
-            <div class="price-text">
-                <span>価格</span>
-                <span class="indespensable">必須</span>
+        <div class="question-text">
+            <div class="price-content">
+                <div class="price-text">
+                    <span>価格</span>
+                </div>
+                <span class="sell-yen">¥</span>
+                <%= f.text_field :price, class: "price-input", id: "item-price", placeholder: "例) 300" %>
             </div>
-            <span class="sell-yen">¥</span>
-            <%= f.text_field :price, class: "price-input", id: "item-price", placeholder: "例) 300" %>
+            <div class="price-content">
+                <span>販売手数料(10%)</span>
+                <span>
+                    <span id="add-tex-price"></span>円
+                </span>
+            </div>
+            <div class="price-content">
+                <span>販売利益</span>
+                <span>
+                    <span id="profit"></span>円
+                </span>
+            </div>
         </div>
-        <div class="price-content">
-            <span>販売手数料(10%)</span>
-            <span>
-                <span id="add-tex-price"></span>円
-            </span>
-        </div>
-        <div class="price-content">
-            <span>販売利益</span>
-            <span>
-                <span id="profit"></span>円
-            </span>
-        </div>
-    </div>
-    <%# /販売価格 %>
+        <%# /販売価格 %>
 
-    <%# 下部ボタン %>
-    <div class="sell-btn-contents">
-        <%= f.submit "送信", class: "sell-btn" %>
-    </div>
-    <%# /下部ボタン %>
-<% end %>
+        <%# 下部ボタン %>
+        <div class="sell-btn-contents">
+            <%= f.submit "送信", class: "sub-btn" %>
+        </div>
+        <%# /下部ボタン %>
+      </div>
+  <% end %>
+</div>
