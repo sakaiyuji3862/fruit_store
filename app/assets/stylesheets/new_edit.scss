@@ -1,0 +1,94 @@
+$cBlack: black;
+$cWhite: white;
+
+#new-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+.items-sell-main {
+    width: 700px;
+    height: 1500px;
+    position: absolute;
+    top: 250px;
+    right: 580px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+
+    
+    & .items-header {
+        text-align: center;
+    
+        & .items-header {
+            font-size: 40px;
+        }
+        & .items-sell-title {
+            font-size: 28px;
+        }
+    }
+
+    & .img-upload {
+       & .weight-bold-text {
+           font-size: 22px;
+       }
+    }
+
+    & .click-upload p {
+       margin-bottom: 0px;
+    }
+
+    & .new-items {
+        & .weight-bold-text {
+            font-size: 22px;
+        }
+
+        & #item-name {
+            width: 250px;
+        }
+
+        & .items-explain {
+            & #item-info {
+                width: 400px;
+                height: 150px;
+            }
+        }
+
+    }
+    & .items-detail{
+        & span {
+            font-size: 22px;
+        }
+
+        & .form {
+            & .select-box {
+                width: 150px;
+            }
+        }
+    }
+
+    & .sell-price {
+
+        & .question-text {
+            padding: 0 185px 25px;
+
+            & .price-content {
+                width: 300px;
+                border-bottom: 1px solid #ccc;
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                
+                & .price-text {
+                    display: flex;
+                    align-items: center;
+                }
+                & .sell-yen {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
