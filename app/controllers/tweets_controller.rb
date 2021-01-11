@@ -1,7 +1,7 @@
 class TweetsController < ApplicationController
     before_action :set_find, except: [:index, :new, :create]
     def index
-        @tweets = Tweet.all
+        @tweets = Tweet.includes(:user).order("created_at DESC")
     end
 
     def new
