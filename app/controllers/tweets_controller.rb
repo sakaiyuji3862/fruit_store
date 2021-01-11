@@ -34,6 +34,11 @@ class TweetsController < ApplicationController
         end
     end
 
+    def destroy
+        @tweet.destroy
+        redirect_to root_path
+    end
+
     private
 
     def tweet_params
