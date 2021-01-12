@@ -1,0 +1,81 @@
+$cWhite: white;
+$cBlack: Black;
+
+#show-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.item-show {
+    width: 1000px;
+    height: 1500px;
+    position: absolute;
+    top: 200px;
+    right: 500px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+
+    & .item-box {
+        & .show-item-name {
+            font-size: 30px;
+        }
+            
+            & .item-price-box {
+                
+                & .item-price {
+                    font-size: 40px;
+                    display: block;
+                }
+                
+                & .item-postage {
+                    font-size: 20px;
+                    display: block;
+                    margin-bottom: 20px;
+                }
+            }
+            
+            & .item-explain-box {
+                width: 500px;
+                margin: 25px auto;
+                border: solid 2px #dedede;
+                padding: 15px;
+            }
+
+            & .detail-table {
+                width: 400px;
+                margin: 0 auto 20px;
+                line-height: 30px;
+            }
+        }
+        
+    #comment-text {
+        display: block;
+        width: 250px;
+        height: 50px;
+        margin: 0 auto;
+    }
+
+    .show-btn {
+        background-color: $cWhite;
+        color: $cBlack;
+        text-decoration: none;
+        padding: 10px 40px;
+        margin: 10px;
+        font-weight: 600;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        transition: all 0.3s;
+    
+        &:hover {
+            background-color: $cBlack;
+            color: $cWhite;
+            box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    .comment-name {
+        text-decoration: none;
+    }
+}

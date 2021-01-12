@@ -1,18 +1,18 @@
 <header class="sub-header">
   <p class="sub-title">規格外の果物やさん</p>
   <div class="nav-menu">
-    <%= link_to "トップページ", root_path, class: "main-header" %>
-    <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "main-header" %>
+    <%= link_to "トップページ", root_path, class: "sub-btn" %>
+    <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "sub-btn" %>
   </div>
 </header>
-<%= image_tag "AdobeStock_1816103.jpeg", alt: "top icon", id: "login-image" %>
+<%= image_tag "AdobeStock_377057342.jpeg", alt: "top icon", id: "show-image" %>
 <div class="item-show">
     <div class="item-box">
-        <h2 class="name">
-            <%= @tweet.name%>
+        <h2 class="show-item-name">
+            <%= @tweet.name %>
         </h2>
         <div class="item-img-content">
-            <%= image_tag @tweet.image.variant(resize: '600x600'), class: "item-box-img" %>
+            <%= image_tag @tweet.image.variant(resize: '700x700'), class: "item-box-img" %>
         </div>
         <div class="item-price-box">
             <span class="item-price">
@@ -22,12 +22,15 @@
                 <%= @tweet.shipping_cost.name %>
             </span>
         </div>
-        <%= link_to "編集", edit_tweet_path, method: :get, class: "item-red-btn" %>
-        <p class="or-text">or</p>
-        <%= link_to "削除", tweet_path(@tweet), method: :delete, class: "item-destroy" %>
-        <%= link_to "購入", "#", class: "item-red-btn" %>
+        <% if current_user == @tweet.user %>
+            <%= link_to "編集", edit_tweet_path, method: :get, class: "show-btn" %>
+            <p class="or-text">or</p>
+            <%= link_to "削除", tweet_path(@tweet), method: :delete, class: "show-btn" %>
+        <% else %>
+            <%= link_to "購入", "#", class: "show-btn" %>
+        <% end %>
         <div class="item-explain-box">
-            <span><%= @tweet.text %></span>
+            <%= @tweet.text %>
         </div>
         <table class="detail-table">
             <tbody>
@@ -53,18 +56,18 @@
     <div calss="container">
         <% if user_signed_in? %>
             <%= form_with(model: [@tweet,@comment], local:true)do |form| %>
-                <%= form.text_area :text, placeholder: "コメントする", rows: "2" %>
-                <%= form.submit "SEND" %>
+                <%= form.text_area :text, placeholder: "コメントする", id: "comment-text", rows: "2" %>
+                <%= form.submit "SEND", class: "show-btn" %>
             <% end %>
         <% else %>
             <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</strong>
         <% end %>
-        <div class="comments">
-            <h4>＜コメント一覧＞</h4>
+        <h4>＜コメント一覧＞</h4>
+        <div class="comment-list">
             <% if @comments.length != 0 %>
                 <% @comments.each do |comment| %>
                     <p>
-                        <strong><%= link_to comment.user.nickname, "#" %>：</strong>
+                        <strong><%= link_to comment.user.nickname, "#", class: "comment-name" %>：</strong>
                         <%= comment.text %>
                     </p>
                 <% end %>
