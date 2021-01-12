@@ -2,7 +2,7 @@ class TweetsController < ApplicationController
     before_action :set_find, except: [:index, :new, :create]
     before_action :contributor_confirmation, only: [:edit, :update, :destroy]
     def index
-        @tweets = Tweet.includes(:user).order("created_at DESC")
+        @tweets = Tweet.includes(:user).order("created_at DESC").page(params[:page]).per(5)
     end
 
     def new
