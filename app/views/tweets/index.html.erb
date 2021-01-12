@@ -28,7 +28,10 @@
                 <div class="new-post">
                     <%= link_to "New Post", new_tweet_path, class: "sub-menu" %>
                     <span class="sub-title">新規投稿</span>
-                    <%= link_to "ログアウト", destroy_user_session_path, method: :delete,　calss: "sub-menu" %>
+                    <%= link_to "ログアウト", destroy_user_session_path, method: :delete, calss: "sub-menu" %>
+                </div>
+                <div class="paginate">
+                    <%= paginate @tweets %>
                 </div>
                 <div class="item-lists">
                     <% if @tweets.length != 0 %>
@@ -52,6 +55,9 @@
                             </div>
                         <% end %>
                     <% end %>
+                </div>
+                <div class="paginate">
+                    <%= paginate @tweets %>
                 </div>
             </div>
             <%# /投稿商品一覧 %>
