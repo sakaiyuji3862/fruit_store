@@ -1,0 +1,76 @@
+#show-image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.item-show {
+  width: 1000px;
+  height: 1500px;
+  position: absolute;
+  top: 200px;
+  right: 500px;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+.item-show .item-box .show-item-name {
+  font-size: 30px;
+}
+
+.item-show .item-box .item-price-box .item-price {
+  font-size: 40px;
+  display: block;
+}
+
+.item-show .item-box .item-price-box .item-postage {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.item-show .item-box .item-explain-box {
+  width: 500px;
+  margin: 25px auto;
+  border: solid 2px #dedede;
+  padding: 15px;
+}
+
+.item-show .item-box .detail-table {
+  width: 400px;
+  margin: 0 auto 20px;
+  line-height: 30px;
+}
+
+.item-show #comment-text {
+  display: block;
+  width: 250px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.item-show .show-btn {
+  background-color: white;
+  color: Black;
+  text-decoration: none;
+  padding: 10px 40px;
+  margin: 10px;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.item-show .show-btn:hover {
+  background-color: Black;
+  color: white;
+  -webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.item-show .comment-name {
+  text-decoration: none;
+}
+/*# sourceMappingURL=show.css.map */

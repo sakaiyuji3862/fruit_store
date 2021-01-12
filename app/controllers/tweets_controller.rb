@@ -1,5 +1,6 @@
 class TweetsController < ApplicationController
     before_action :set_find, except: [:index, :new, :create]
+    before_action :contributor_confirmation, only: [:edit, :update, :destroy]
     def index
         @tweets = Tweet.includes(:user).order("created_at DESC")
     end
@@ -48,5 +49,11 @@ class TweetsController < ApplicationController
 
     def set_find
         @tweet = Tweet.find(params[:id])
+    end
+
+    def contributor_confirmation
+        if current_user != @tweet.user
+            redirect_to root_path
+        end
     end
 end
