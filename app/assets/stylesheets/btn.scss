@@ -16,6 +16,7 @@ $cWhite: white;
     &:hover {
         background-color: $cBlack;
         color: $cWhite;
+        text-decoration: none;
         box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
     }
 }

@@ -20,7 +20,7 @@
             <%# 投稿商品一覧 %>
             <%= image_tag "AdobeStock_285734617.jpeg", alt: "top icon", id: "assets" %>
             <div class="item-contents">
-                <%= form_with(url: "#", local:true, method: :get, class: "search-form") do |form| %>
+                <%= form_with(url: search_tweets_path, local:true, method: :get, class: "search-form") do |form| %>
                     <%= form.text_field :keyword, placeholder: "商品を検索する", class: "search-input"%>
                     <%= form.submit "検索", class: "sub-btn" %>
                 <% end %>
