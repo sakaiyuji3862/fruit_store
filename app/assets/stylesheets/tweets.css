@@ -277,6 +277,10 @@ body {
   color: black;
 }
 
+.main-title:hover {
+  text-decoration: none;
+}
+
 .sub-title {
   display: block;
   font-size: 14px;

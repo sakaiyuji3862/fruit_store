@@ -1,5 +1,5 @@
 class TweetsController < ApplicationController
-    before_action :set_find, except: [:index, :new, :create]
+    before_action :set_find, except: [:index, :new, :create, :search]
     before_action :contributor_confirmation, only: [:edit, :update, :destroy]
     def index
         @tweets = Tweet.includes(:user).order("created_at DESC").page(params[:page]).per(5)
@@ -38,6 +38,10 @@ class TweetsController < ApplicationController
     def destroy
         @tweet.destroy
         redirect_to root_path
+    end
+
+    def search
+        @tweets = Tweet.search(params[:keyword])
     end
 
     private

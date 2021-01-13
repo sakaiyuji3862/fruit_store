@@ -8,7 +8,6 @@ class Tweet < ApplicationRecord
     belongs_to :shipping_cost
     belongs_to :shipping_day
 
-
     with_options presence: true do
         validates :name
         validates :price, format: {with: /\A[0-9]+\z/}, #半角数字
@@ -23,5 +22,12 @@ class Tweet < ApplicationRecord
         validates :image
     end
 
+    def self.search(search)
+      if search != ""
+        Tweet.where('name LIKE(?)', "%#{search}%")
+      else
+        Tweet.all
+      end
+    end
 
 end

@@ -1,0 +1,49 @@
+#search-image {
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+  position: relative;
+}
+
+#search-container {
+  width: 1000px;
+  position: absolute;
+  top: 250px;
+  right: 520px;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+#search-container .item-lists {
+  padding-top: 20px;
+}
+
+#search-container .item-lists .item-info {
+  margin-bottom: 70px;
+}
+
+#search-container .item-lists .item-info .search-link {
+  display: block;
+  font-size: 20px;
+}
+
+#search-container .item-lists .item-info .search-img {
+  width: 600px;
+}
+
+#search-container .item-lists .item-info .item-name {
+  font-size: 20px;
+}
+
+#search-container .item-lists .item-info .item-price {
+  font-size: 20px;
+}
+
+#search-container .item-lists .item-info .item-text {
+  width: 500px;
+  margin: 25px auto;
+  border: solid 2px #dedede;
+  background-color: white;
+  padding: 15px;
+}
+/*# sourceMappingURL=search.css.map */

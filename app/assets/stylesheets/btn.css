@@ -15,6 +15,7 @@
 .sub-btn:hover {
   background-color: black;
   color: white;
+  text-decoration: none;
   -webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
 }
