@@ -39,7 +39,7 @@
 | Column   | Type    | Options                        |
 | -------- | --------| ------------------------------ |
 | user_id  | integer | null: false, foreign_key: true |
-| item_id  | integer | null: false, foreign_key: true |
+| tweet_id  | integer | null: false, foreign_key: true |
 | text     | text    | null: false                    |
 
 ### Association
@@ -69,7 +69,7 @@
 | Column           | Type    | Options                        |
 | ---------------- | ------- | ------------------------------ |
 | user_id          | integer | null: false, foreign_key: true | 
-| item_id          | integer | null: false, foreign_key: true |
+| tweet_id          | integer | null: false, foreign_key: true |
 
 
 ### Association
