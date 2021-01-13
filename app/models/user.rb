@@ -6,6 +6,7 @@ class User < ApplicationRecord
 
          has_many :tweets
          has_many :comments
+         has_many :orders
 
          validates :nickname, presence: true
          validates :password, format: {with: /\A(?=.*?[a-z])(?=.*?[\d])[a-z\d]+\z/i.freeze} #半角英数字
