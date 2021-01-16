@@ -11,8 +11,13 @@
         <h2 class="show-item-name">
             <%= @tweet.name %>
         </h2>
-        <div class="item-img-content">
-            <%= image_tag @tweet.image.variant(resize: '700x700'), class: "item-box-img" %>
+        <div class="show-img-content">
+            <%= image_tag @tweet.image.variant(resize: '700x400'), class: "item-box-img" %>
+            <% if @tweet.order.present? %>
+                <div class="show-sold-out">
+                    <span>売却済!!</span>
+                </div>
+            <% end %>
         </div>
         <div class="item-price-box">
             <span class="item-price">
@@ -22,12 +27,14 @@
                 <%= @tweet.shipping_cost.name %>
             </span>
         </div>
-        <% if current_user == @tweet.user %>
-            <%= link_to "編集", edit_tweet_path, method: :get, class: "show-btn" %>
-            <p class="or-text">or</p>
-            <%= link_to "削除", tweet_path(@tweet), method: :delete, class: "show-btn" %>
-        <% else %>
-            <%= link_to "購入", "#", class: "show-btn" %>
+        <% if @tweet.order.blank? %>
+            <% if current_user == @tweet.user %>
+                <%= link_to "編集", edit_tweet_path, method: :get, class: "show-btn" %>
+                <p class="or-text">or</p>
+                <%= link_to "削除", tweet_path(@tweet), method: :delete, class: "show-btn" %>
+            <% else %>
+                <%= link_to "購入", tweet_orders_path(@tweet), class: "show-btn" %>
+            <% end %>
         <% end %>
         <div class="item-explain-box">
             <%= @tweet.text %>

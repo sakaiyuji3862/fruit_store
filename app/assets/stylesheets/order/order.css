@@ -1,0 +1,209 @@
+.transaction-contents {
+  width: 1000px;
+  position: absolute;
+  top: 200px;
+  right: 500px;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+.transaction-contents .transaction-main {
+  margin: 60px 120px;
+}
+
+.transaction-contents .transaction-main .transaction-title-text {
+  font-size: 25px;
+  border-bottom: 2px solid #f5f5f5;
+  padding-bottom: 7px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.transaction-contents .transaction-main .buy-item-info {
+  border-bottom: 2px solid #f5f5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.transaction-contents .transaction-main .buy-item-info .buy-item-img {
+  width: 250px;
+  margin: 10px 0px 20px;
+}
+
+.transaction-contents .transaction-main .buy-item-info .buy-item-right-content {
+  margin-right: 60px;
+}
+
+.transaction-contents .transaction-main .buy-item-info .buy-item-right-content .buy-item-price {
+  font-weight: bold;
+}
+
+.transaction-contents .transaction-main .buy-item-info .buy-item-right-content .buy-item-price .item-price-text {
+  font-size: 25px;
+}
+
+.transaction-contents .transaction-main .buy-item-info .buy-item-right-content .buy-item-price .item-price-sub-text {
+  font-size: 18px;
+}
+
+.transaction-contents .transaction-main .item-payment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-bottom: 2px solid #f5f5f5;
+  padding: 30px 0 25px;
+}
+
+.transaction-contents .transaction-main .item-payment .item-payment-title {
+  font-size: 20px;
+}
+
+.transaction-contents .transaction-main .item-payment .item-payment-price {
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin-top: 10px;
+}
+
+.transaction-contents .transaction-main .credit-card-form .info-input-haedline {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.transaction-contents .transaction-main .credit-card-form .form-group {
+  width: 50%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.transaction-contents .transaction-main .credit-card-form .form-group .form-text-wrap .form-text {
+  font-size: 15px;
+}
+
+.transaction-contents .transaction-main .credit-card-form .form-group .input-expiration-date-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px 0 22px;
+}
+
+.transaction-contents .transaction-main .credit-card-form .form-group .input-expiration-date-wrap .input-expiration-date {
+  width: 73px;
+  height: 48px;
+  padding: 11px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 16px;
+}
+
+.transaction-contents .transaction-main .credit-card-form .form-group .input-expiration-date-wrap p {
+  font-weight: bold;
+  margin: 15px 7px;
+}
+
+.transaction-contents .transaction-main .credit-card-form .form-group .input-default {
+  width: 100%;
+  margin-top: 5px;
+  height: 48px;
+  padding: 10px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 16px;
+}
+
+.transaction-contents .transaction-main .credit-card-form .form-group .available-card {
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+.transaction-contents .transaction-main .credit-card-form .form-group .available-card .card-logo {
+  width: 40px;
+  height: 30px;
+  margin: 5px 5px;
+}
+
+.transaction-contents .transaction-main .shipping-address-form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.transaction-contents .transaction-main .shipping-address-form .info-input-haedline {
+  font-size: 22px;
+  border-top: 2px solid #f5f5f5;
+  padding-top: 20px;
+}
+
+.transaction-contents .transaction-main .shipping-address-form .form-group {
+  text-align: left;
+}
+
+.transaction-contents .transaction-main .shipping-address-form .form-group .form-any {
+  background: #ccc;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 4px;
+}
+
+.transaction-contents .transaction-main .shipping-address-form .form-group .input-default {
+  width: 100%;
+  margin-top: 5px;
+  height: 48px;
+  padding: 10px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 16px;
+}
+
+.transaction-contents .transaction-main .shipping-address-form .form-group .select-box {
+  width: 200px;
+  height: 40px;
+  margin-top: 5px;
+  padding: 10px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 16px;
+}
+
+.indispensable {
+  background: #ea352d;
+  margin-left: 8px;
+  padding: 3px;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.buy-red-btn {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  padding: 10px 40px;
+  margin: 20px 10px;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.buy-red-btn:hover {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  -webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+/*# sourceMappingURL=order.css.map */

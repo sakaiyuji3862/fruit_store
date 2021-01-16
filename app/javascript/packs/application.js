@@ -9,6 +9,7 @@ require("@rails/activestorage").start()
 require("channels")
 require("../mobile_menu.js")
 require("../item_price.js")
+require("../card.js")
 //= require jquery
 //= require jquery_ujs
 
