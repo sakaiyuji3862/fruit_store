@@ -28,6 +28,27 @@ $cBlack: black;
                 text-decoration: none;
             }
 
+            & .search-img-content {
+                width: 600px;
+                height: 335px;
+                margin: 0 auto;
+                position: relative;
+
+                & .search-sold-out {
+                    position: absolute;
+                    top: 40%;
+                    width: 100%;
+                    height: 65px;
+                    text-align: center;
+                    background-color: #fbae3e;
+                    transform: skewY(-10deg);
+                    & span {
+                        color: #FFF;
+                        font-size: 45px;
+                    }
+                }
+            }
+
             & .search-img {
                 width: 600px;
             }

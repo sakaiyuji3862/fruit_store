@@ -15,7 +15,14 @@
         <% @tweets.each do |tweet|%>
             <div class="item-info">
                 <%= link_to "#{tweet.user.nickname} さん", "#", class: "search-link" %>
-                <%= link_to image_tag(tweet.image.variant(resize: '400x400'), class: "search-img"), tweet_path(tweet) %>
+                <div class="search-img-content">
+                    <%= link_to image_tag(tweet.image.variant(resize: '400x400'), class: "search-img"), tweet_path(tweet) %>
+                    <% if tweet.order.present? %>
+                        <div class="search-sold-out">
+                            <span>売却済!!</span>
+                        </div>
+                    <% end %>
+                </div>
                 <h3 class="item-name">
                     <%= tweet.name %>
                 </h3>

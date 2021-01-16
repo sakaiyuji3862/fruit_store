@@ -30,8 +30,12 @@
   font-size: 22px;
 }
 
-.items-sell-main .click-upload p {
+.items-sell-main .img-upload .click-upload p {
   margin-bottom: 0px;
+}
+
+.items-sell-main .img-upload .click-upload #item-image {
+  margin: 0 230px;
 }
 
 .items-sell-main .new-items .weight-bold-text {

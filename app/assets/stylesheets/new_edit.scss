@@ -33,12 +33,18 @@ $cWhite: white;
        & .weight-bold-text {
            font-size: 22px;
        }
+       
+       & .click-upload {
+           & p {
+               margin-bottom: 0px;
+            }
+            
+            & #item-image {
+                margin: 0 230px;
+            }
+        } 
     }
-
-    & .click-upload p {
-       margin-bottom: 0px;
-    }
-
+        
     & .new-items {
         & .weight-bold-text {
             font-size: 22px;
