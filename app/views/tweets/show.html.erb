@@ -59,26 +59,25 @@
                 </tr>
             </tbody>
         </table>
-    </div>
-    <div calss="container">
-        <% if user_signed_in? %>
-            <%= form_with(model: [@tweet,@comment], local:true)do |form| %>
-                <%= form.text_area :text, placeholder: "コメントする", id: "comment-text", rows: "2" %>
-                <%= form.submit "SEND", class: "show-btn" %>
-            <% end %>
-        <% else %>
-            <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</strong>
-        <% end %>
-        <h4>＜コメント一覧＞</h4>
-        <div class="comment-list">
-            <% if @comments.length != 0 %>
-                <% @comments.each do |comment| %>
-                    <p>
-                        <strong><%= link_to comment.user.nickname, "#", class: "comment-name" %>：</strong>
-                        <%= comment.text %>
-                    </p>
+        <div calss="container">
+            <div class="comment-form">
+                <%= form_with(model: [@tweet,@comment], local:true)do |form| %>
+                    <%= form.text_area :text, placeholder: "コメントする", id: "comment-text", rows: "2" %>
+                    <%= form.submit "SEND", class: "show-btn" %>
                 <% end %>
-            <% end %>
+            </div>
+            <h4>＜コメント一覧＞</h4>
+            <div class="comment-list">
+                <% if @comments.length != 0 %>
+                    <% @comments.each do |comment| %>
+                        <p>
+                            <strong><%= link_to comment.user.nickname, "#", class: "comment-name" %>：</strong>
+                            <%= comment.text %>
+                            <%= link_to "削除", tweet_comment_path(comment.tweet.id, comment.id), method: :delete, class: "comment-destroy" %>
+                        </p>
+                    <% end %>
+                <% end %>
+            </div>
         </div>
     </div>
 </div>

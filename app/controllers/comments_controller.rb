@@ -4,6 +4,13 @@ class CommentsController < ApplicationController
         redirect_to "/tweets/#{comment.tweet.id}"
     end
 
+    def destroy
+        comment = Comment.find_by(id: params[:id], tweet_id: params[:tweet_id]).destroy
+        redirect_to tweet_path(comment.tweet.id)
+        
+        
+    end
+
     private
 
     def comment_params
