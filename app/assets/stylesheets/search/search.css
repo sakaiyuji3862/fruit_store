@@ -35,9 +35,14 @@
   position: relative;
 }
 
+#search-container .item-lists .item-info .search-img-content .search-img {
+  width: 600px;
+  height: 350px;
+}
+
 #search-container .item-lists .item-info .search-img-content .search-sold-out {
   position: absolute;
-  top: 40%;
+  top: 16%;
   width: 100%;
   height: 65px;
   text-align: center;
