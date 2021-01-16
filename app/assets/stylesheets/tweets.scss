@@ -97,14 +97,21 @@ $cSubTitle: #535353;
                 margin: 0 auto;
                 position: relative;
 
+                & .item-img {
+                    width: 400px;
+                    height: 235px;
+                }
+
                 & .sold-out {
                     position: absolute;
-                    top: 40%;
+                    top: 15%;
                     width: 100%;
-                    height: 65px;
+                    height: 62px;
                     text-align: center;
                     background-color: #fbae3e;
                     transform: skewY(-10deg);
+                    cursor: pointer;
+
                     & span {
                         color: #FFF;
                         font-size: 45px;

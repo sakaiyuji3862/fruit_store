@@ -24,8 +24,13 @@ $cBlack: Black;
         & .show-img-content {
             width: 700px;
             height: 372px;
-            margin: 0 auto;
+            margin: 45px auto;
             position: relative;
+
+            & .item-box-img {
+                width: 700px;
+                height: 400px;
+            }
 
             & .show-sold-out {
                 position: absolute;

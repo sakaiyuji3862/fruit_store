@@ -21,8 +21,13 @@
 .item-show .item-box .show-img-content {
   width: 700px;
   height: 372px;
-  margin: 0 auto;
+  margin: 45px auto;
   position: relative;
+}
+
+.item-show .item-box .show-img-content .item-box-img {
+  width: 700px;
+  height: 400px;
 }
 
 .item-show .item-box .show-img-content .show-sold-out {
