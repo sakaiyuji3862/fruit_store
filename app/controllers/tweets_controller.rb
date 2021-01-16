@@ -1,6 +1,8 @@
 class TweetsController < ApplicationController
     before_action :set_find, except: [:index, :new, :create, :search]
+    before_action :authenticate_user!, except: :index
     before_action :contributor_confirmation, only: [:edit, :update, :destroy]
+    before_action :set_edit, only: :edit
     def index
         @tweets = Tweet.includes(:user).order("created_at DESC").page(params[:page]).per(5)
     end
@@ -57,6 +59,12 @@ class TweetsController < ApplicationController
 
     def contributor_confirmation
         if current_user != @tweet.user
+            redirect_to root_path
+        end
+    end
+
+    def set_edit
+        if @tweet.order.present?
             redirect_to root_path
         end
     end
