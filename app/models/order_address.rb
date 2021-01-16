@@ -1,6 +1,6 @@
 class OrderAddress
     include ActiveModel::Model
-    attr_accessor :post_code, :prefecture_id, :city, :address, :building_name, :phone_number, :user_id, :tweet_id
+    attr_accessor :post_code, :prefecture_id, :city, :address, :building_name, :phone_number, :user_id, :tweet_id, :token
 
     with_options presence: true do
         validates :post_code, format: {with: /\A\d{3}[-]\d{4}\z/} # 郵便番号（ハイフンあり7桁）
@@ -10,7 +10,7 @@ class OrderAddress
         validates :prefecture_id, numericality: {other_than: 1}
         validates :user_id
         validates :tweet_id
-        # validates :token
+        validates :token
     end
 
     def save
