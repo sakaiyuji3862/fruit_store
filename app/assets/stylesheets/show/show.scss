@@ -17,6 +17,9 @@ $cBlack: Black;
     text-align: center;
 
     & .item-box {
+        width: 700px;
+        margin: 0 auto;
+
         & .show-item-name {
             font-size: 30px;
         }
@@ -75,7 +78,7 @@ $cBlack: Black;
                 line-height: 30px;
             }
         }
-        
+
     #comment-text {
         display: block;
         width: 250px;
@@ -83,12 +86,40 @@ $cBlack: Black;
         margin: 0 auto;
     }
 
+    .comment-list {
+        width: 420px;
+        margin: 0 auto;
+        text-align: left;
+
+        & p {
+            & .comment-destroy {
+                float: right;
+                text-decoration: none;
+                background-color: $cWhite;
+                color: $cBlack;
+                text-decoration: none;
+                padding: 2px;
+                font-weight: 600;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: all 0.3s;
+            
+                &:hover {
+                    background-color: $cBlack;
+                    color: $cWhite;
+                    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+                }
+            }
+        }
+    }
+    
+
     .show-btn {
         background-color: $cWhite;
         color: $cBlack;
         text-decoration: none;
         padding: 10px 40px;
-        margin: 10px;
+        margin: 10px auto;
         font-weight: 600;
         border-radius: 5px;
         margin-bottom: 20px;
@@ -105,4 +136,5 @@ $cBlack: Black;
     .comment-name {
         text-decoration: none;
     }
+    
 }
