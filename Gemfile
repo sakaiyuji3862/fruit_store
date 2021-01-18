@@ -69,3 +69,5 @@ gem 'jquery-rails'
 gem 'kaminari'
 
 gem 'payjp'
+
+gem "aws-sdk-s3", require: false
