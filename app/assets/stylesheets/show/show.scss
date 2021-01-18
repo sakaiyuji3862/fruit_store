@@ -9,11 +9,11 @@ $cBlack: Black;
 
 .item-show {
     width: 1000px;
-    height: 1500px;
     position: absolute;
     top: 200px;
     right: 500px;
-    background-color: rgba(255, 255, 255, 0.5);
+    // background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(236, 238, 239, 0.5);
     text-align: center;
 
     & .item-box {
@@ -72,6 +72,10 @@ $cBlack: Black;
                 padding: 15px;
             }
 
+            & .or-text {
+                margin: 10px 0;
+            }
+
             & .detail-table {
                 width: 400px;
                 margin: 0 auto 20px;
@@ -88,7 +92,7 @@ $cBlack: Black;
 
     .comment-list {
         width: 420px;
-        margin: 0 auto;
+        margin: 0 auto 30px;
         text-align: left;
 
         & p {
@@ -101,6 +105,7 @@ $cBlack: Black;
                 padding: 2px;
                 font-weight: 600;
                 border-radius: 5px;
+                border: solid 1px #dedede;
                 cursor: pointer;
                 transition: all 0.3s;
             
@@ -123,6 +128,7 @@ $cBlack: Black;
         font-weight: 600;
         border-radius: 5px;
         margin-bottom: 20px;
+        border: solid 1px #dedede;
         cursor: pointer;
         transition: all 0.3s;
     
