@@ -5,43 +5,43 @@
   position: relative;
 }
 
-#search-container {
+.search-container .search-container-chaild {
   width: 1000px;
   position: absolute;
   top: 250px;
   right: 520px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(236, 238, 239, 0.5);
   text-align: center;
 }
 
-#search-container .item-lists {
+.search-container .search-container-chaild .item-lists {
   padding-top: 20px;
 }
 
-#search-container .item-lists .item-info {
+.search-container .search-container-chaild .item-lists .item-info {
   margin-bottom: 70px;
 }
 
-#search-container .item-lists .item-info .search-link {
+.search-container .search-container-chaild .item-lists .item-info .search-link {
   display: block;
   font-size: 25px;
   color: black;
   text-decoration: none;
 }
 
-#search-container .item-lists .item-info .search-img-content {
+.search-container .search-container-chaild .item-lists .item-info .search-img-content {
   width: 600px;
   height: 335px;
   margin: 0 auto;
   position: relative;
 }
 
-#search-container .item-lists .item-info .search-img-content .search-img {
+.search-container .search-container-chaild .item-lists .item-info .search-img-content .search-img {
   width: 600px;
   height: 350px;
 }
 
-#search-container .item-lists .item-info .search-img-content .search-sold-out {
+.search-container .search-container-chaild .item-lists .item-info .search-img-content .search-sold-out {
   position: absolute;
   top: 16%;
   width: 100%;
@@ -52,26 +52,26 @@
           transform: skewY(-10deg);
 }
 
-#search-container .item-lists .item-info .search-img-content .search-sold-out span {
+.search-container .search-container-chaild .item-lists .item-info .search-img-content .search-sold-out span {
   color: #FFF;
   font-size: 45px;
 }
 
-#search-container .item-lists .item-info .search-img {
+.search-container .search-container-chaild .item-lists .item-info .search-img {
   width: 600px;
 }
 
-#search-container .item-lists .item-info .item-name {
+.search-container .search-container-chaild .item-lists .item-info .item-name {
   font-size: 25px;
   font-weight: bold;
 }
 
-#search-container .item-lists .item-info .item-price span {
+.search-container .search-container-chaild .item-lists .item-info .item-price span {
   font-size: 20px;
   font-weight: bold;
 }
 
-#search-container .item-lists .item-info .item-text {
+.search-container .search-container-chaild .item-lists .item-info .item-text {
   width: 500px;
   margin: 25px auto;
   border: solid 2px #dedede;

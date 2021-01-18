@@ -6,11 +6,10 @@
 
 .items-sell-main {
   width: 700px;
-  height: 1500px;
   position: absolute;
   top: 250px;
   right: 580px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(236, 238, 239, 0.5);
   text-align: center;
 }
 
