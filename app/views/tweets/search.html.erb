@@ -1,12 +1,7 @@
-<header class="sub-header">
-  <p class="sub-title">規格外の果物やさん</p>
-  <div class="nav-menu">
-    <%= link_to "トップページ", root_path, class: "sub-btn" %>
-    <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "sub-btn" %>
-  </div>
-</header>
+<%= render partial: "header" %>
 <%= image_tag "AdobeStock_271036756.jpeg", alt: "top icon", id: "search-image" %>
 <div id="search-container">
+    <h1 class="search-title">検索画面</h1>
     <%= form_with(url: search_tweets_path, local:true, method: :get, class: "search-form") do |form| %>
         <%= form.text_field :keyword, placeholder: "商品を検索する", class: "search-input"%>
         <%= form.submit "検索", class: "sub-btn" %>
@@ -14,7 +9,7 @@
     <div class="item-lists">
         <% @tweets.each do |tweet|%>
             <div class="item-info">
-                <%= link_to "#{tweet.user.nickname} さん", "#", class: "search-link" %>
+                <%= link_to "#{tweet.user.nickname} さん", tweet_path(tweet), class: "search-link" %>
                 <div class="search-img-content">
                     <%= link_to image_tag(tweet.image.variant(resize: '400x400'), class: "search-img"), tweet_path(tweet) %>
                     <% if tweet.order.present? %>
