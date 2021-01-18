@@ -24,7 +24,8 @@ $cBlack: black;
 
             & .search-link {
                 display: block;
-                font-size: 20px;
+                font-size: 25px;
+                color: $cBlack;
                 text-decoration: none;
             }
 
@@ -59,11 +60,15 @@ $cBlack: black;
             }
 
             & .item-name {
-                font-size: 20px;
+                font-size: 25px;
+                font-weight: bold;
             }
 
             & .item-price {
-                font-size: 20px;
+                & span {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
             }
 
             & .item-text {

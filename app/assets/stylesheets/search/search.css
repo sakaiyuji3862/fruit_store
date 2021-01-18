@@ -24,7 +24,8 @@
 
 #search-container .item-lists .item-info .search-link {
   display: block;
-  font-size: 20px;
+  font-size: 25px;
+  color: black;
   text-decoration: none;
 }
 
@@ -61,11 +62,13 @@
 }
 
 #search-container .item-lists .item-info .item-name {
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: bold;
 }
 
-#search-container .item-lists .item-info .item-price {
+#search-container .item-lists .item-info .item-price span {
   font-size: 20px;
+  font-weight: bold;
 }
 
 #search-container .item-lists .item-info .item-text {
