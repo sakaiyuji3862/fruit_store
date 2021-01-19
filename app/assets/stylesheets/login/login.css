@@ -36,11 +36,15 @@
   position: absolute;
   top: 350px;
   right: 780px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(236, 238, 239, 0.5);
 }
 
 .login-menu .login {
   font-size: 40px;
+}
+
+.login-menu .login-flash-message {
+  margin: 30px 0;
 }
 
 .login-menu .field {
@@ -51,6 +55,10 @@
   font-size: 30px;
 }
 
+.login-menu .field .remember_me {
+  font-size: 18px;
+}
+
 .login-menu .sub-button {
   text-decoration: none;
   color: black;
@@ -59,11 +67,10 @@
 .sign-menu {
   text-align: center;
   width: 400px;
-  height: 750px;
   position: absolute;
   top: 350px;
   right: 780px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(236, 238, 239, 0.5);
 }
 
 .sign-menu .login {
@@ -81,6 +88,8 @@
 .sign-menu .sub-button {
   text-decoration: none;
   color: black;
+  display: block;
+  margin: 10px;
 }
 
 #password-image {
