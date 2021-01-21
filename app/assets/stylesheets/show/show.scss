@@ -20,6 +20,10 @@ $cBlack: Black;
         width: 700px;
         margin: 0 auto;
 
+        & .show-title {
+            margin: 31px;
+        }
+
         & .show-item-name {
             font-size: 30px;
         }

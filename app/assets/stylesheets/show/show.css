@@ -18,6 +18,10 @@
   margin: 0 auto;
 }
 
+.item-show .item-box .show-title {
+  margin: 31px;
+}
+
 .item-show .item-box .show-item-name {
   font-size: 30px;
 }
