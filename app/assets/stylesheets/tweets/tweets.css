@@ -345,4 +345,116 @@ footer .footer-copy-right {
   margin: 0;
   padding: 40px 0 0 10px;
 }
+
+@media (max-width: 1024px) {
+  #container {
+    position: relative;
+    height: 100vh;
+    z-index: 2;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  #container #assets {
+    width: 100%;
+    height: 100%;
+  }
+  #container .explanation {
+    width: 400px;
+    height: 370px;
+    background-color: white;
+    position: absolute;
+    top: 400px;
+    right: 302px;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    opacity: 0.7;
+  }
+  #container .explanation .word {
+    margin: 18px 0 0 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 768px) {
+  #container {
+    position: relative;
+    height: 100vh;
+    z-index: 2;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  #container #assets {
+    width: 100%;
+    height: 100%;
+  }
+  #container .explanation {
+    width: 400px;
+    height: 370px;
+    background-color: white;
+    position: absolute;
+    top: 400px;
+    right: 180px;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    opacity: 0.7;
+  }
+  #container .explanation .word {
+    margin: 18px 0 0 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 500px) {
+  #container {
+    position: relative;
+    height: 100vh;
+    z-index: 2;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  #container #assets {
+    width: 100%;
+    height: 100%;
+  }
+  #container .explanation {
+    width: 300px;
+    height: 262px;
+    background-color: white;
+    position: absolute;
+    top: 440px;
+    right: 66px;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    opacity: 0.7;
+  }
+  #container .explanation .word {
+    margin: 8px 0 0;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .header {
+    background-color: white;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .title {
+    font-size: 20px;
+    padding: 45px 10px 40px;
+    font-weight: normal;
+    letter-spacing: 3px;
+  }
+}
 /*# sourceMappingURL=tweets.css.map */
