@@ -122,6 +122,9 @@
 | データベース設計       | https://i.gyazo.com/1e45964daafc92bdbed3f9642cda462f.png |
 |                     |                                                          |
 
+<br />
+<br />
+<br />
 
 ## 機能
 ユーザー管理機能
@@ -139,6 +142,9 @@ https://i.gyazo.com/8c70372e6425893e66db7014632e4f82.jpg
 ## 説明
 新規登録、ログイン機能にはDeviseを使用しております。
 
+<br />
+<br />
+<br />
 
 ## 機能
 出品機能
@@ -156,6 +162,9 @@ https://i.gyazo.com/89fa7ff03464d2eaac7f57a0b71f37ae.gif
 ## 説明
 選択項目はActiveHashで実装。値段設定はJavaScriptで実装しております。
 
+<br />
+<br />
+<br />
 
 ## 機能
 一覧表示機能
@@ -169,6 +178,9 @@ https://i.gyazo.com/89fa7ff03464d2eaac7f57a0b71f37ae.gif
 ## 実装した機能についてのGIF
 https://i.gyazo.com/26748f6bdd19a0bd6d14e01c5c945910.gif
 
+<br />
+<br />
+<br />
 
 ## 機能
 詳細表示機能
@@ -183,6 +195,9 @@ https://i.gyazo.com/26748f6bdd19a0bd6d14e01c5c945910.gif
 ## 実装した機能についてのGIF
 https://i.gyazo.com/c2488e07e117a84bd5bf9e7209d08602.gif
 
+<br />
+<br />
+<br />
 
 ## 機能
 編集機能
@@ -195,6 +210,9 @@ https://i.gyazo.com/c2488e07e117a84bd5bf9e7209d08602.gif
 ## 実装した機能についてのGIF
 https://i.gyazo.com/86766578f24f99a2850f8bade0822cb6.gif
 
+<br />
+<br />
+<br />
 
 ## 機能
 削除機能
@@ -207,6 +225,9 @@ https://i.gyazo.com/86766578f24f99a2850f8bade0822cb6.gif
 ## 実装した機能についてのGIF
 https://i.gyazo.com/7b48903fc7409fff23efe3f603a0c654.gif
 
+<br />
+<br />
+<br />
 
 ## 機能
 購入機能
@@ -222,6 +243,9 @@ https://i.gyazo.com/13f3e85722f41a5279a6a02c7dbed7b7.gif
 ## 説明
 クレジットカード決済は、Pay.jpの外部APIを使用して実装しております。
 
+<br />
+<br />
+<br />
 
 ## 機能
 コメント機能
@@ -237,6 +261,9 @@ https://i.gyazo.com/13f3e85722f41a5279a6a02c7dbed7b7.gif
 ## 実装した機能についてのGIF
 https://i.gyazo.com/e5bec156732b650b5375147c0416da9f.gif
 
+<br />
+<br />
+<br />
 
 ## 機能
 検索機能
@@ -252,6 +279,9 @@ https://i.gyazo.com/e5bec156732b650b5375147c0416da9f.gif
 ## 実装した機能についてのGIF
 https://i.gyazo.com/f94ca5f51749601d379e52c00fdf111e.gif
 
+<br />
+<br />
+<br />
 
 ## 機能
 ページネーション機能
@@ -269,6 +299,9 @@ https://i.gyazo.com/1e53b296de8e3e8668b72fc8e3cdfedd.png
 ## 説明
 'kaminari'というgemを使用しました。見た目はBootstrapで整えました。
 
+<br />
+<br />
+<br />
 
 ## 機能
 売却済み表示
@@ -282,6 +315,9 @@ https://i.gyazo.com/1e53b296de8e3e8668b72fc8e3cdfedd.png
 ## 実装した機能についてのGIF
 https://i.gyazo.com/ad8e6e21deded65e8fc5d02d8d877c53.png
 
+<br />
+<br />
+<br />
 
 ## 機能
 エラーメッセージ日本語化
@@ -296,6 +332,9 @@ https://i.gyazo.com/ad8e6e21deded65e8fc5d02d8d877c53.png
 ## 実装した機能についてのGIF
 https://i.gyazo.com/8fe040ee2fb6d22d38dbc4655811fd82.png
 
+<br />
+<br />
+<br />
 
 ## 機能
 AmazonS3 導入
@@ -309,6 +348,10 @@ AmazonS3の導入は欠かせないと考え導入しました。
 ## ストーリー(ユースケース)
 AmazonS3を導入することで商品を出品する工程が増えることはないので、今まで通りに商品出品画面
 から記入で問題ありません。
+
+<br />
+<br />
+<br />
 
 ## 機能
 AWSへのデプロイ
