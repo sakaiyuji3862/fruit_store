@@ -68,6 +68,7 @@
 
 #container .item-contents .item-lists {
   background-color: white;
+  width: 100%;
 }
 
 #container .item-lists {
@@ -381,6 +382,7 @@ footer .footer-copy-right {
   #container {
     position: relative;
     height: 100vh;
+    width: 100vh;
     z-index: 2;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
@@ -395,7 +397,7 @@ footer .footer-copy-right {
     background-color: white;
     position: absolute;
     top: 280px;
-    right: 180px;
+    right: 218px;
     font-size: 20px;
     text-align: center;
     letter-spacing: 2px;
@@ -412,6 +414,7 @@ footer .footer-copy-right {
   #container {
     position: relative;
     height: 100vh;
+    width: 100vh;
     z-index: 2;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
@@ -426,7 +429,7 @@ footer .footer-copy-right {
     background-color: white;
     position: absolute;
     top: 350px;
-    right: 66px;
+    right: 271px;
     font-size: 20px;
     text-align: center;
     letter-spacing: 2px;
@@ -436,6 +439,9 @@ footer .footer-copy-right {
     margin: 8px 0 0;
     font-size: 15px;
     font-weight: bold;
+  }
+  .search-form {
+    padding-top: 35px;
   }
   .header {
     background-color: white;
@@ -462,6 +468,7 @@ footer .footer-copy-right {
   #container {
     position: relative;
     height: 100vh;
+    width: 100vh;
     z-index: 2;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
@@ -476,7 +483,7 @@ footer .footer-copy-right {
     background-color: white;
     position: absolute;
     top: 350px;
-    right: 42px;
+    right: 281px;
     font-size: 20px;
     text-align: center;
     letter-spacing: 2px;
@@ -493,6 +500,7 @@ footer .footer-copy-right {
   #container {
     position: relative;
     height: 100vh;
+    width: 100vh;
     z-index: 2;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
@@ -507,7 +515,7 @@ footer .footer-copy-right {
     background-color: white;
     position: absolute;
     top: 350px;
-    right: 10px;
+    right: 291px;
     font-size: 20px;
     text-align: center;
     letter-spacing: 2px;

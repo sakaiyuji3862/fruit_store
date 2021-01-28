@@ -83,3 +83,268 @@ $cBlack: black;
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .search-container {
+        & .search-container-chaild {
+            width: 100%;
+            position: absolute;
+            top: 250px;
+            right: 11px;
+            background-color: rgba(236, 238, 239, 0.5);
+            text-align: center;
+        }
+    } 
+}
+
+@media (max-width: 768px) {
+    .search-container {
+        & .search-container-chaild {
+            width: 100%;
+            position: absolute;
+            top: 250px;
+            right: 11px;
+            background-color: rgba(236, 238, 239, 0.5);
+            text-align: center;
+        }
+    } 
+}
+
+@media (max-width: 425px) {
+    .search-container {
+        & .search-container-chaild {
+            width: 592px;
+            position: absolute;
+            top: 250px;
+            right: -163px;
+            background-color: rgba(236, 238, 239, 0.5);
+            text-align: center;
+    
+            & .item-lists {
+                padding-top: 20px;
+    
+                & .item-info {
+                    margin-bottom: 70px;
+    
+                    & .search-link {
+                        display: block;
+                        font-size: 25px;
+                        color: $cBlack;
+                        text-decoration: none;
+                    }
+    
+                    & .search-img-content {
+                        width: 500px;
+                        height: 295px;
+                        margin: 0 auto;
+                        position: relative;
+    
+                        & .search-img {
+                            width: 500px;
+                            height: 300px;
+                        }
+    
+                        & .search-sold-out {
+                            position: absolute;
+                            top: 20%;
+                            right: 1px;
+                            width: 498px;
+                            height: 65px;
+                            text-align: center;
+                            background-color: #fbae3e;
+                            transform: skewY(-10deg);
+                            & span {
+                                color: #FFF;
+                                font-size: 45px;
+                            }
+                        }
+                    }
+    
+                    // & .search-img {
+                    //     width: 600px;
+                    // }
+    
+                    // & .item-name {
+                    //     font-size: 25px;
+                    //     font-weight: bold;
+                    // }
+    
+                    // & .item-price {
+                    //     & span {
+                    //         font-size: 20px;
+                    //         font-weight: bold;
+                    //     }
+                    // }
+    
+                    // & .item-text {
+                    //     width: 500px;
+                    //     margin: 25px auto;
+                    //     border: solid 2px #dedede;
+                    //     background-color: $cWhite;
+                    //     padding: 15px;
+                    // }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 375px) {
+    .search-container {
+        & .search-container-chaild {
+            width: 589px;
+            position: absolute;
+            top: 250px;
+            right: -204px;
+            background-color: rgba(236, 238, 239, 0.5);
+            text-align: center;
+    
+            & .item-lists {
+                padding-top: 20px;
+    
+                & .item-info {
+                    margin-bottom: 70px;
+    
+                    & .search-link {
+                        display: block;
+                        font-size: 25px;
+                        color: $cBlack;
+                        text-decoration: none;
+                    }
+    
+                    & .search-img-content {
+                        width: 600px;
+                        height: 300px;
+                        margin: 0 auto;
+                        position: relative;
+    
+                        & .search-img {
+                            width: 500px;
+                            height: 300px;
+                        }
+    
+                        & .search-sold-out {
+                            position: absolute;
+                            top: 16%;
+                            right: 51px;
+                            width: 498px;
+                            height: 65px;
+                            text-align: center;
+                            background-color: #fbae3e;
+                            transform: skewY(-10deg);
+                            & span {
+                                color: #FFF;
+                                font-size: 45px;
+                            }
+                        }
+                    }
+    
+                    // & .search-img {
+                    //     width: 600px;
+                    // }
+    
+                    // & .item-name {
+                    //     font-size: 25px;
+                    //     font-weight: bold;
+                    // }
+    
+                    // & .item-price {
+                    //     & span {
+                    //         font-size: 20px;
+                    //         font-weight: bold;
+                    //     }
+                    // }
+    
+                    // & .item-text {
+                    //     width: 500px;
+                    //     margin: 25px auto;
+                    //     border: solid 2px #dedede;
+                    //     background-color: $cWhite;
+                    //     padding: 15px;
+                    // }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 320px) {
+    .search-container {
+        & .search-container-chaild {
+            width: 573px;
+            position: absolute;
+            top: 250px;
+            right: -226px;
+            background-color: rgba(236, 238, 239, 0.5);
+            text-align: center;
+    
+            & .item-lists {
+                padding-top: 20px;
+    
+                & .item-info {
+                    margin-bottom: 70px;
+    
+                    & .search-link {
+                        display: block;
+                        font-size: 25px;
+                        color: $cBlack;
+                        text-decoration: none;
+                    }
+    
+                    & .search-img-content {
+                        width: 500px;
+                        height: 285px;
+                        margin: 0 auto;
+                        position: relative;
+    
+                        & .search-img {
+                            width: 440px;
+                            height: 281px;
+                        }
+    
+                        & .search-sold-out {
+                            position: absolute;
+                            top: 16%;
+                            right: 29px;
+                            width: 442px;
+                            height: 65px;
+                            text-align: center;
+                            background-color: #fbae3e;
+                            transform: skewY(-10deg);
+                            & span {
+                                color: #FFF;
+                                font-size: 45px;
+                            }
+                        }
+                    }
+    
+                    // & .search-img {
+                    //     width: 600px;
+                    // }
+    
+                    // & .item-name {
+                    //     font-size: 25px;
+                    //     font-weight: bold;
+                    // }
+    
+                    // & .item-price {
+                    //     & span {
+                    //         font-size: 20px;
+                    //         font-weight: bold;
+                    //     }
+                    // }
+    
+                    & .item-text {
+                        width: 430px;
+                        margin: 25px auto;
+                        border: solid 2px #dedede;
+                        background-color: $cWhite;
+                        padding: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
