@@ -339,6 +339,13 @@ footer {
             }
         }
     }
+
+    .mobile-menu {
+        position: fixed;
+        right: 0;
+        top: 60px;
+        width: 300px;
+    }
   }
 
   @media (max-width: 768px) {
@@ -372,6 +379,18 @@ footer {
                 font-weight: bold;
             }
         }
+        & .header {
+            & .mobile-menu__btn {
+                display: none;
+            }
+        }
+    }
+
+    .mobile-menu {
+        position: fixed;
+        right: 0;
+        top: 60px;
+        width: 230px;
     }
 }
 
@@ -405,6 +424,12 @@ footer {
                 margin: 8px 0 0;
                 font-size: 15px;
                 font-weight: bold;
+            }
+        }
+
+        & .header {
+            & .mobile-menu__btn {
+                display: none;
             }
         }
     }
@@ -460,6 +485,12 @@ footer {
                 font-weight: bold;
             }
         }
+
+        & .header {
+            & .mobile-menu__btn {
+                display: none;
+            }
+        }
     }
 }
 
@@ -492,6 +523,12 @@ footer {
                 margin: 8px 0 0;
                 font-size: 15px;
                 font-weight: bold;
+            }
+        }
+
+        & .header {
+            & .mobile-menu__btn {
+                display: none;
             }
         }
     }
