@@ -122,6 +122,28 @@
 }
 
 @media (max-width: 1024px) {
+  .sub-header {
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 5;
+  }
+  .sub-header .sub-title {
+    font-size: 25px;
+    padding: 35px 10px 10px;
+    font-weight: normal;
+    letter-spacing: 3px;
+  }
   #login-image {
     width: 100%;
     height: 100%;
@@ -145,7 +167,7 @@
     background-color: rgba(236, 238, 239, 0.5);
   }
   #password-image {
-    margin-top: 100px;
+    margin-top: 130px;
     width: 100%;
     height: 100%;
     position: relative;
@@ -158,6 +180,30 @@
     top: 230px;
     right: 320px;
     background-color: rgba(255, 255, 255, 0.5);
+  }
+  .nav-menu {
+    text-align: center;
+  }
+  .nav-menu .sub-btn {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 10px 25px;
+    margin: 25px auto;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    display: block;
+  }
+  .nav-menu .sub-btn:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    -webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+            box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -216,6 +262,15 @@
     right: 50px;
     background-color: rgba(236, 238, 239, 0.5);
   }
+  .login-menu .field {
+    font-size: 30px;
+  }
+  .login-menu .field .input-default {
+    font-size: 20px;
+  }
+  .login-menu .field .remember_me {
+    font-size: 18px;
+  }
   .sign-menu {
     text-align: center;
     width: 400px;
@@ -223,6 +278,12 @@
     top: 150px;
     right: 40px;
     background-color: rgba(236, 238, 239, 0.5);
+  }
+  .sign-menu .field {
+    font-size: 17px;
+  }
+  .sign-menu .field .input-default {
+    font-size: 20px;
   }
   #password-image {
     margin-top: 130px;
@@ -258,7 +319,314 @@
     background-color: white;
     color: black;
     text-decoration: none;
+    padding: 10px 10px;
+    margin: 25px auto;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    display: block;
+  }
+  .sub-btn:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    -webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+            box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (max-width: 425px) {
+  #login-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .login-menu {
+    text-align: center;
+    width: 400px;
+    height: 550px;
+    position: absolute;
+    top: 150px;
+    right: 12px;
+    background-color: rgba(236, 238, 239, 0.5);
+  }
+  .login-menu .field {
+    font-size: 30px;
+  }
+  .login-menu .field .input-default {
+    font-size: 20px;
+  }
+  .login-menu .field .remember_me {
+    font-size: 18px;
+  }
+  .sign-menu {
+    text-align: center;
+    width: 400px;
+    position: absolute;
+    top: 150px;
+    right: 13px;
+    background-color: rgba(236, 238, 239, 0.5);
+  }
+  .sign-menu .field {
+    font-size: 17px;
+  }
+  .sign-menu .field .input-default {
+    font-size: 20px;
+  }
+  #password-image {
+    margin-top: 130px;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+  }
+  .login-menu-password {
+    text-align: center;
+    width: 400px;
+    height: 380px;
+    position: absolute;
+    top: 145px;
+    right: 14px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .login-menu-password > h1 {
+    font-size: 28px;
+  }
+  .sub-header {
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    width: 100%;
+    height: 145px;
+    text-align: center;
+    z-index: 5;
+  }
+  .sub-header .sub-title {
+    font-size: 15px;
+    padding: 23px 0 23px 40px;
+    font-weight: normal;
+    letter-spacing: 3px;
+  }
+  .nav-menu {
+    margin-right: 40px;
+  }
+  .nav-menu.sub-btn {
+    background-color: white;
+    color: black;
+    text-decoration: none;
     padding: 10px 40px;
+    margin: 25px auto;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    display: block;
+  }
+  .nav-menu.sub-btn:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    -webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+            box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (max-width: 375px) {
+  #login-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .login-menu {
+    text-align: center;
+    width: 400px;
+    height: 550px;
+    position: absolute;
+    top: 150px;
+    right: -10px;
+    background-color: rgba(236, 238, 239, 0.5);
+  }
+  .login-menu .field {
+    font-size: 30px;
+  }
+  .login-menu .field .input-default {
+    font-size: 20px;
+  }
+  .login-menu .field .remember_me {
+    font-size: 18px;
+  }
+  .sign-menu {
+    text-align: center;
+    width: 400px;
+    position: absolute;
+    top: 150px;
+    right: 0px;
+    background-color: rgba(236, 238, 239, 0.5);
+  }
+  .sign-menu .field {
+    font-size: 17px;
+  }
+  .sign-menu .field .input-default {
+    font-size: 20px;
+  }
+  #password-image {
+    margin-top: 130px;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+  }
+  .login-menu-password {
+    text-align: center;
+    width: 400px;
+    height: 380px;
+    position: absolute;
+    top: 145px;
+    right: -10px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .login-menu-password > h1 {
+    font-size: 28px;
+  }
+  .sub-header {
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    width: 100%;
+    height: 145px;
+    text-align: center;
+    z-index: 5;
+  }
+  .sub-header .sub-title {
+    font-size: 12px;
+    padding: 14px 0 14px 24px;
+    font-weight: normal;
+    letter-spacing: 3px;
+  }
+  .nav-menu {
+    margin-right: 40px;
+  }
+  .nav-menu.sub-btn {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 10px 40px;
+    margin: 25px auto;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    display: block;
+  }
+  .nav-menu.sub-btn:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    -webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+            box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (max-width: 320px) {
+  #login-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .login-menu {
+    text-align: center;
+    width: 400px;
+    height: 550px;
+    position: absolute;
+    top: 150px;
+    right: -64px;
+    background-color: rgba(236, 238, 239, 0.5);
+  }
+  .login-menu .field {
+    font-size: 30px;
+  }
+  .login-menu .field .input-default {
+    font-size: 20px;
+  }
+  .login-menu .field .remember_me {
+    font-size: 18px;
+  }
+  .sign-menu {
+    text-align: center;
+    width: 400px;
+    position: absolute;
+    top: 150px;
+    right: -63px;
+    background-color: rgba(236, 238, 239, 0.5);
+  }
+  .sign-menu .field {
+    font-size: 17px;
+  }
+  .sign-menu .field .input-default {
+    font-size: 20px;
+  }
+  #password-image {
+    margin-top: 150px;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+  }
+  .login-menu-password {
+    text-align: center;
+    width: 400px;
+    height: 380px;
+    position: absolute;
+    top: 152px;
+    right: -36px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .login-menu-password {
+    text-align: center;
+    width: 400px;
+    height: 380px;
+    position: absolute;
+    top: 152px;
+    right: -37px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .login-menu-password > h1 {
+    font-size: 26px;
+  }
+  .login-menu-password .field {
+    font-size: 30px;
+  }
+  .login-menu-password .field .input-default {
+    font-size: 26px;
+  }
+  .login-menu-password .sub-button {
+    text-decoration: none;
+    color: black;
+  }
+  .sub-header {
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    width: 100%;
+    height: 145px;
+    text-align: center;
+    z-index: 5;
+  }
+  .sub-header .sub-title {
+    font-size: 12px;
+    padding: 10px;
+    font-weight: normal;
+    letter-spacing: 3px;
+  }
+  .sub-btn {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 10px 10px;
     margin: 25px auto;
     font-weight: 600;
     border-radius: 5px;
