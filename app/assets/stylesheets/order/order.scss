@@ -206,12 +206,62 @@ $cWhite: white;
 }
 
 @media (max-width: 1024px) {
+    #show-image {
+        margin-top: 100px;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .transaction-contents {
+        width: 1000px;
+        position: absolute;
+        top: 170px;
+        right: 11px;
+        background-color: rgba(236, 238, 239, 0.5);
+        text-align: center;
+    }
 }
+
 @media (max-width: 768px) {
+    .transaction-contents {
+        width: 760px;
+        position: absolute;
+        top: 170px;
+        right: 4px;
+        background-color: rgba(236, 238, 239, 0.5);
+        text-align: center;
+    }
 }
+
 @media (max-width: 425px) {
+    .transaction-contents {
+        width: 700px;
+        position: absolute;
+        top: 170px;
+        right: -285px;
+        background-color: rgba(236, 238, 239, 0.5);
+        text-align: center;
+    }
 }
+
 @media (max-width: 375px) {
+    .transaction-contents {
+        width: 700px;
+        position: absolute;
+        top: 170px;
+        right: -335px;
+        background-color: rgba(236, 238, 239, 0.5);
+        text-align: center;
+    }
 }
 @media (max-width: 324px) {
+    .transaction-contents {
+        width: 700px;
+        position: absolute;
+        top: 170px;
+        right: -385px;
+        background-color: rgba(236, 238, 239, 0.5);
+        text-align: center;
+    }
 }
