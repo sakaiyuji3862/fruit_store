@@ -70,6 +70,7 @@
   margin: 25px auto;
   border: solid 2px #dedede;
   padding: 15px;
+  background-color: white;
 }
 
 .item-show .item-box .or-text {
@@ -141,5 +142,93 @@
 
 .item-show .comment-name {
   text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  .item-show {
+    width: 1000px;
+    position: absolute;
+    top: 150px;
+    right: 15px;
+    background-color: rgba(236, 238, 239, 0.5);
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .item-show {
+    width: 737px;
+    position: absolute;
+    top: 150px;
+    right: 15px;
+    background-color: rgba(236, 238, 239, 0.5);
+    text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  #show-image {
+    width: 86vh;
+    height: 65vh;
+    position: relative;
+  }
+  .item-show {
+    width: 682px;
+    position: absolute;
+    top: 150px;
+    right: -272px;
+    background-color: rgba(236, 238, 239, 0.5);
+    text-align: center;
+  }
+  .item-show .item-box {
+    width: 700px;
+    margin: 0 auto;
+  }
+  .item-show .item-box .show-title {
+    margin: 20px;
+  }
+  .item-show .item-box .show-img-content {
+    width: 700px;
+    height: 372px;
+    margin: 5px auto;
+    position: relative;
+  }
+  .item-show .item-box .show-img-content .item-box-img {
+    width: 600px;
+    height: 350px;
+  }
+  .item-show .item-box .show-img-content .show-sold-out {
+    position: absolute;
+    top: 20%;
+    left: 48px;
+    width: 86%;
+    height: 65px;
+    text-align: center;
+    background-color: #fbae3e;
+    -webkit-transform: skewY(-10deg);
+            transform: skewY(-10deg);
+  }
+}
+
+@media (max-width: 375px) {
+  .item-show {
+    width: 682px;
+    position: absolute;
+    top: 150px;
+    right: -325px;
+    background-color: rgba(236, 238, 239, 0.5);
+    text-align: center;
+  }
+}
+
+@media (max-width: 324px) {
+  .item-show {
+    width: 682px;
+    position: absolute;
+    top: 150px;
+    right: -378px;
+    background-color: rgba(236, 238, 239, 0.5);
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=show.css.map */
