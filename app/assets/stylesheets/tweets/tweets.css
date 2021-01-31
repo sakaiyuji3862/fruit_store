@@ -17,8 +17,8 @@
   height: 370px;
   background-color: white;
   position: absolute;
-  top: 310px;
-  right: 520px;
+  top: 410px;
+  right: 780px;
   font-size: 20px;
   text-align: center;
   letter-spacing: 2px;
@@ -26,6 +26,25 @@
 }
 
 #container .explanation .word {
+  margin: 18px 0 0 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#container .sub-explanation {
+  width: 400px;
+  height: 370px;
+  background-color: white;
+  position: absolute;
+  top: 410px;
+  right: 800px;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+  opacity: 0.7;
+}
+
+#container .sub-explanation .word {
   margin: 18px 0 0 0;
   font-size: 20px;
   font-weight: bold;

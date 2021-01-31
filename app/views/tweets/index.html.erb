@@ -1,24 +1,39 @@
 <div id="global-container">
     <div id="container">
         <div class="mobile-menu__cover"></div>
-        <header class="header">
+        <%# <header class="header">
             <p class="title">規格外の果物やさん</p>
             <button class="mobile-menu__btn">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-        </header>
-        <div class="explanation">
+        </header> %>
+        <%# <div class="explanation">
             <p class="word">味は変わらず美味しいのに、</p><br>
             <p class="word">キズや形が悪くて出荷できない果物。</p><br>
             <p class="word">それでも誰かに届けたい農家さんと</p><br>
             <p class="word">食べてみたいと思う消費者の方とを</p><br>
             <p class="word">つなぐマッチングサービスです。</p>
-        </div>
+        </div> %>
         <% if user_signed_in? %>
-            <%# 投稿商品一覧 %>
+            <header class="header">
+                <p class="title">規格外の果物やさん</p>
+                <button class="mobile-menu__btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </header>
             <%= image_tag "AdobeStock_285734617.jpeg", alt: "top icon", id: "assets" %>
+            <div class="explanation">
+                <p class="word">味は変わらず美味しいのに、</p><br>
+                <p class="word">キズや形が悪くて出荷できない果物。</p><br>
+                <p class="word">それでも誰かに届けたい農家さんと</p><br>
+                <p class="word">食べてみたいと思う消費者の方とを</p><br>
+                <p class="word">つなぐマッチングサービスです。</p>
+            </div>
+            <%# 投稿商品一覧 %>
             <div class="item-contents">
                 <%= form_with(url: search_tweets_path, local:true, method: :get, class: "search-form") do |form| %>
                     <%= form.text_field :keyword, placeholder: "商品を検索する", class: "search-input"%>
@@ -70,7 +85,22 @@
                 <p class="footer-copy-right">&copy; 2021 Fruit_store</p>
             </footer>
         <% else %>
+            <header class="header">
+                <p class="title">規格外の果物やさん</p>
+                <button class="mobile-menu__btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </header>
             <%= image_tag "AdobeStock_251835289.jpeg", alt: "top icon", id: "assets" %>
+            <div class="sub-explanation">
+                <p class="word">味は変わらず美味しいのに、</p><br>
+                <p class="word">キズや形が悪くて出荷できない果物。</p><br>
+                <p class="word">それでも誰かに届けたい農家さんと</p><br>
+                <p class="word">食べてみたいと思う消費者の方とを</p><br>
+                <p class="word">つなぐマッチングサービスです。</p>
+            </div>
             <p class="copy-right">&copy; 2021 Fruit_store</p>
         <% end %>
         
