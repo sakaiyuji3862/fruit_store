@@ -119,8 +119,13 @@
 |                     | いいね機能                                                 |
 |                     | レスポンシブデザイン                                         |
 |                     |                                                          |
-| データベース設計       | https://i.gyazo.com/1e45964daafc92bdbed3f9642cda462f.png |
-|                     |                                                          |
+
+<br />
+<br />
+<br />
+
+## データベース設計
+![](https://i.gyazo.com/1e45964daafc92bdbed3f9642cda462f.png)
 
 <br />
 <br />
@@ -137,10 +142,11 @@
 より使いやすいアプリケーションを目指し、登録において最低限の情報の記入で
 新規登録、ログインをできるように実装しました。
 ## 実装した機能についてのGIF
+### 新規登録画面
+![](https://i.gyazo.com/8c70372e6425893e66db7014632e4f82.jpg)
+### ログイン画面
 ![](https://i.gyazo.com/889a5150fd409cbbe9421b4823a5782d.jpg)
 
-https://i.gyazo.com/889a5150fd409cbbe9421b4823a5782d.jpg
-https://i.gyazo.com/8c70372e6425893e66db7014632e4f82.jpg
 ## 説明
 新規登録、ログイン機能にはDeviseを使用しております。
 
@@ -159,8 +165,11 @@ https://i.gyazo.com/8c70372e6425893e66db7014632e4f82.jpg
 商品一覧表示から遷移できます。商品の名前、説明文、画像、発送についての情報や値段設定を記入
 することにより出品できます。発送についての情報は選択式の為、より簡単に登録ができます。
 ## 実装した機能についてのGIF
-https://i.gyazo.com/f331b21ced636a6ca5608a14ced579d8.gif
-https://i.gyazo.com/89fa7ff03464d2eaac7f57a0b71f37ae.gif
+### 出品画面への遷移
+![](https://i.gyazo.com/f331b21ced636a6ca5608a14ced579d8.gif)
+### 出品画面
+![](https://i.gyazo.com/89fa7ff03464d2eaac7f57a0b71f37ae.gif)
+
 ## 説明
 選択項目はActiveHashで実装。値段設定はJavaScriptで実装しております。
 
@@ -178,7 +187,7 @@ https://i.gyazo.com/89fa7ff03464d2eaac7f57a0b71f37ae.gif
 出品した情報を商品の簡単な内容と共に一つの画面にまとめました。
 よりシンプルに商品を閲覧できます。
 ## 実装した機能についてのGIF
-https://i.gyazo.com/26748f6bdd19a0bd6d14e01c5c945910.gif
+![](https://i.gyazo.com/26748f6bdd19a0bd6d14e01c5c945910.gif)
 
 <br />
 <br />
@@ -195,7 +204,7 @@ https://i.gyazo.com/26748f6bdd19a0bd6d14e01c5c945910.gif
 閲覧できます。出品者は商品の編集と削除ができ、出品者以外のユーザーは購入に遷移できる
 ようになっています。
 ## 実装した機能についてのGIF
-https://i.gyazo.com/c2488e07e117a84bd5bf9e7209d08602.gif
+![](https://i.gyazo.com/c2488e07e117a84bd5bf9e7209d08602.gif)
 
 <br />
 <br />
@@ -210,7 +219,7 @@ https://i.gyazo.com/c2488e07e117a84bd5bf9e7209d08602.gif
 ## ストーリー(ユースケース)
 商品詳細画面から遷移できます。出品した商品の内容を全て変更することができます。
 ## 実装した機能についてのGIF
-https://i.gyazo.com/86766578f24f99a2850f8bade0822cb6.gif
+![](https://i.gyazo.com/86766578f24f99a2850f8bade0822cb6.gif)
 
 <br />
 <br />
@@ -225,7 +234,7 @@ https://i.gyazo.com/86766578f24f99a2850f8bade0822cb6.gif
 ## ストーリー(ユースケース)
 商品詳細画面に導入しました。出品した商品の内容を削除することができます。
 ## 実装した機能についてのGIF
-https://i.gyazo.com/7b48903fc7409fff23efe3f603a0c654.gif
+![](https://i.gyazo.com/7b48903fc7409fff23efe3f603a0c654.gif)
 
 <br />
 <br />
@@ -241,7 +250,7 @@ https://i.gyazo.com/7b48903fc7409fff23efe3f603a0c654.gif
 ## ストーリー(ユースケース)
 商品詳細画面に導入しました。クレジットの情報と住所を記入することで購入ができます。
 ## 実装した機能についてのGIF
-https://i.gyazo.com/13f3e85722f41a5279a6a02c7dbed7b7.gif
+![](https://i.gyazo.com/13f3e85722f41a5279a6a02c7dbed7b7.gif)
 ## 説明
 クレジットカード決済は、Pay.jpの外部APIを使用して実装しております。
 
@@ -261,7 +270,7 @@ https://i.gyazo.com/13f3e85722f41a5279a6a02c7dbed7b7.gif
 商品を購入したいユーザーとのやりとりがしやすくなります。ユーザーにとって、より使
 いやすいアプリにする為、実装しました。
 ## 実装した機能についてのGIF
-https://i.gyazo.com/e5bec156732b650b5375147c0416da9f.gif
+![](https://i.gyazo.com/e5bec156732b650b5375147c0416da9f.gif)
 
 <br />
 <br />
@@ -279,7 +288,7 @@ https://i.gyazo.com/e5bec156732b650b5375147c0416da9f.gif
 検索機能は一覧表示画面と検索結果画面に導入しました。商品の名前を記入することで商品を
 検索できます。
 ## 実装した機能についてのGIF
-https://i.gyazo.com/f94ca5f51749601d379e52c00fdf111e.gif
+![](https://i.gyazo.com/f94ca5f51749601d379e52c00fdf111e.gif)
 
 <br />
 <br />
@@ -296,8 +305,8 @@ https://i.gyazo.com/f94ca5f51749601d379e52c00fdf111e.gif
 商品一覧画面に導入しました。商品を5つごとにページで分かれるように設定しているので、より見た目
 がスッキリすることができました。
 ## 実装した機能についてのGIF
-https://i.gyazo.com/7d7edcf158caa472f9fe8c45afb93eef.png
-https://i.gyazo.com/1e53b296de8e3e8668b72fc8e3cdfedd.png
+![](https://i.gyazo.com/7d7edcf158caa472f9fe8c45afb93eef.png)
+![](https://i.gyazo.com/1e53b296de8e3e8668b72fc8e3cdfedd.png)
 ## 説明
 'kaminari'というgemを使用しました。見た目はBootstrapで整えました。
 
@@ -315,7 +324,7 @@ https://i.gyazo.com/1e53b296de8e3e8668b72fc8e3cdfedd.png
 商品一覧画面、検索結果画面、商品詳細画面の売却した商品の画像に表示されます。"売却済"を表示
 することにより、簡単に見分けられるようにしました。
 ## 実装した機能についてのGIF
-https://i.gyazo.com/ad8e6e21deded65e8fc5d02d8d877c53.png
+![](https://i.gyazo.com/ad8e6e21deded65e8fc5d02d8d877c53.png)
 
 <br />
 <br />
@@ -332,7 +341,7 @@ https://i.gyazo.com/ad8e6e21deded65e8fc5d02d8d877c53.png
 新規登録、出品など何か入力に不備があった場合、該当箇所にエラーがあることを日本語
 にて表示させます。
 ## 実装した機能についてのGIF
-https://i.gyazo.com/8fe040ee2fb6d22d38dbc4655811fd82.png
+![](https://i.gyazo.com/8fe040ee2fb6d22d38dbc4655811fd82.png)
 
 <br />
 <br />
