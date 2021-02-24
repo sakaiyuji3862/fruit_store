@@ -16,14 +16,14 @@ https://www.fruit-store-0526.com/
 ## 使用技術など
 【フロントエンド】
 <br />
-・HTML/CSS
-・Bootstrap
-・JavaScript
+・HTML/CSS  
+・Bootstrap  
+・JavaScript  
 <br />
 【バックエンド】
 <br />
-・Ruby '~> 2.6.5'
-・Ruby on Rails '~> 6.0.0'
+・Ruby '2.6.5'  
+・Ruby on Rails '6.0.0'
 <br />
 【データベース】
 <br />
@@ -31,29 +31,29 @@ https://www.fruit-store-0526.com/
 <br />
 【インフラ】
 <br />
-・AWS(S3、EC2、Route 53、ACM)
-・Nginx、Unicorn、MariaDB
-・Capistrano
+・AWS(S3、EC2、Route 53、ACM)  
+・Nginx、Unicorn、MariaDB  
+・Capistrano  
 <br />
 【テストコード】
 <br />
-・Rspec
-・FactoryBot
-・Faker
-・capybara
+・Rspec  
+・FactoryBot  
+・Faker  
+・capybara  
 <br />
 【その他、使用したGem】
 <br />
-・devise
-・mini_magick
-・image_processing', '~> 1.2'
-・pry-rails
-・active_hash
-・kaminari
-・payjp (外部API)
-・rails-i18n
-・rubocop
-・aws-sdk-s3
+・devise  
+・mini_magick  
+・image_processing', '~> 1.2'  
+・pry-rails  
+・active_hash  
+・kaminari  
+・payjp (外部API)  
+・rails-i18n  
+・rubocop  
+・aws-sdk-s3  
 
 <br />
 <br />
@@ -62,9 +62,9 @@ https://www.fruit-store-0526.com/
 ## 機能
 ユーザー管理機能
 ## 詳細
-・deviseでの新規登録、ログイン機能
-・ログアウト機能
-・かんたんログイン機能
+・deviseでの新規登録、ログイン機能  
+・ログアウト機能  
+・かんたんログイン機能  
 ## 新規登録画面
 ![](https://i.gyazo.com/8c70372e6425893e66db7014632e4f82.jpg)
 ## ログイン画面
@@ -78,12 +78,9 @@ https://www.fruit-store-0526.com/
 出品機能
 ## 詳細
 ・商品の名前、説明文、画像、発送についての情報や値段設定を記入する
-ことにより出品
-・選択項目 ActiveHash
-・値段設定 JavaScript
-## ストーリー(ユースケース)
-商品一覧表示から遷移できます。商品の名前、説明文、画像、発送についての情報や値段設定を記入
-することにより出品できます。発送についての情報は選択式の為、より簡単に登録ができます。
+ことにより出品  
+・選択項目 ActiveHash  
+・値段設定 JavaScript  
 ## 出品画面への遷移
 ![](https://i.gyazo.com/f331b21ced636a6ca5608a14ced579d8.gif)
 ## 出品画面
@@ -107,8 +104,8 @@ https://www.fruit-store-0526.com/
 ## 機能
 詳細表示機能
 ## 詳細
-・商品出品した際に記入した全ての情報の閲覧(出品画像をクリックすることで遷移)
-・出品者は商品の編集と削除ができ、出品者以外のユーザーは購入に遷移可能
+・商品出品した際に記入した全ての情報の閲覧(出品画像をクリックすることで遷移)  
+・出品者は商品の編集と削除ができ、出品者以外のユーザーは購入に遷移可能  
 ## 実装した機能についてのGIF
 ![](https://i.gyazo.com/c2488e07e117a84bd5bf9e7209d08602.gif)
 
@@ -141,7 +138,7 @@ https://www.fruit-store-0526.com/
 ## 機能
 購入機能
 ## 詳細
-・商品を購入、クレジット情報と住所の記入が必須(商品詳細画面から遷移)
+・商品を購入、クレジット情報と住所の記入が必須(商品詳細画面から遷移)  
 ・クレジットカード決済は、Pay.jpの外部APIを使用
 ## 実装した機能についてのGIF
 ![](https://i.gyazo.com/13f3e85722f41a5279a6a02c7dbed7b7.gif)
@@ -174,8 +171,6 @@ https://www.fruit-store-0526.com/
 
 ## 機能
 ページネーション機能
-## 目的
-ページごとに分けることによって、商品を見やすくする為
 ## 詳細
 ・ページネーション gem 'kaminari'、Bootstrap
 ## ストーリー(ユースケース)
@@ -338,19 +333,19 @@ https://www.fruit-store-0526.com/
 <br />
 
 ## 今後追加実装していきたい点、改善点
-・レスポンシブデザインで正しい調整
-・コメント機能の非同期通信化
-・いいね機能
-・Dockerを使ったコンテナ化
-・CircleCIを導入してCI／CDパイプラインを構築
-・Rspecでのテストコードをしっかり作る
+・レスポンシブデザインで正しい調整  
+・コメント機能の非同期通信化  
+・いいね機能  
+・Dockerを使ったコンテナ化  
+・CircleCIを導入してCI／CDパイプラインを構築  
+・Rspecでのテストコードをしっかり作る  
 
 # 最後に
-オリジナルアプリケーションもまだまだ改善したいことが
-たくさんあり、これから新しい技術を追加してより使いやす
-くしていきたいと考えております。
-私自身も技術的には入り口に立ったばかりなので、これから
-たくさんの技術を勉強できることがとても楽しみです。
+オリジナルアプリケーションもまだまだ改善したいことが  
+たくさんあり、これから新しい技術を追加してより使いやす  
+くしていきたいと考えております。  
+私自身も技術的には入り口に立ったばかりなので、これから  
+たくさんの技術を勉強できることがとても楽しみです。  
 ここまでご覧いただき、ありがとうございました。
 
 
