@@ -81,8 +81,7 @@ https://www.fruit-store-0526.com/
 ことにより出品  
 ・選択項目 ActiveHash  
 ・値段設定 JavaScript  
-## 出品画面への遷移
-![](https://i.gyazo.com/f331b21ced636a6ca5608a14ced579d8.gif)
+
 ## 出品画面
 ![](https://i.gyazo.com/89fa7ff03464d2eaac7f57a0b71f37ae.gif)
 
@@ -114,20 +113,9 @@ https://www.fruit-store-0526.com/
 <br />
 
 ## 機能
-編集機能
+削除機能、編集機能
 ## 詳細
-・商品詳細画面において、ユーザーが出品した商品のみを編集できるように実装(商品詳細画面から遷移)
-## 実装した機能についてのGIF
-![](https://i.gyazo.com/86766578f24f99a2850f8bade0822cb6.gif)
-
-<br />
-<br />
-<br />
-
-## 機能
-削除機能
-## 詳細
-・商品詳細画面において、ユーザーが出品した商品のみを削除可能
+・商品詳細画面において、ユーザーが出品した商品のみを削除、編集可能
 ## 実装した機能についてのGIF
 ![](https://i.gyazo.com/7b48903fc7409fff23efe3f603a0c654.gif)
 
