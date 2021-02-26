@@ -14,35 +14,35 @@ https://www.fruit-store-0526.com/
 <br />
 
 ## 使用技術など
-【フロントエンド】
+【フロントエンド】  
 <br />
 ・HTML/CSS  
 ・Bootstrap  
 ・JavaScript  
 <br />
-【バックエンド】
+【バックエンド】  
 <br />
 ・Ruby '2.6.5'  
-・Ruby on Rails '6.0.0'
+・Ruby on Rails '6.0.0'  
 <br />
-【データベース】
+【データベース】  
 <br />
-・MySQL
+・MySQL  
 <br />
-【インフラ】
+【インフラ】  
 <br />
 ・AWS(S3、EC2、Route 53、ACM)  
 ・Nginx、Unicorn、MariaDB  
 ・Capistrano  
 <br />
-【テストコード】
+【テストコード】  
 <br />
 ・Rspec  
 ・FactoryBot  
 ・Faker  
 ・capybara  
 <br />
-【その他、使用したGem】
+【その他、使用したGem】  
 <br />
 ・devise  
 ・mini_magick  
