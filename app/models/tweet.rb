@@ -25,7 +25,7 @@ class Tweet < ApplicationRecord
 
     def self.search(search)
       if search != ""
-        Tweet.where('name LIKE(?)', "%#{search}%")
+        Tweet.where('name LIKE(?) OR text LIKE(?)', "%#{search}%", "%#{search}%")
       else
         Tweet.all
       end
